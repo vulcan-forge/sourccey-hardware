@@ -2,6 +2,8 @@
 
 Open-source mechanical hardware files for a robot platform and matching teleoperator assembly.
 
+Last Updated: 04/21/2026
+
 ## Overview
 This repository contains CAD source files (`.step`) for two major systems:
 - `Robot/`: robot body, arms, dome, holders, linear actuator parts, and accessories.
