@@ -1,0 +1,76 @@
+# Keep text files normalized across operating systems.
+* text=auto
+
+# Common source/document formats are text.
+*.c text
+*.cc text
+*.cpp text
+*.h text
+*.hpp text
+*.html text
+*.css text
+*.js text
+*.json text
+*.md text
+*.py text
+*.rs text
+*.sh text eol=lf
+*.toml text
+*.yaml text
+*.yml text
+*.xml text
+*.svg text
+*.csv text
+*.tsv text
+
+# CAD and manufacturing files are binary assets.
+*.3mf binary
+*.step filter=lfs diff=lfs merge=lfs -text
+*.stp filter=lfs diff=lfs merge=lfs -text
+*.iges binary
+*.igs binary
+*.stl binary
+*.obj binary
+*.f3d binary
+*.fcstd binary
+*.fcdoc binary
+*.sldprt binary
+*.sldasm binary
+*.slddrw binary
+*.prt binary
+*.asm binary
+*.dwg binary
+*.dxf binary
+*.blend binary
+
+# Documents, images, audio, and video are binary assets.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.bmp binary
+*.tif binary
+*.tiff binary
+*.ico binary
+*.mp4 binary
+*.mov binary
+*.avi binary
+*.mkv binary
+*.webm binary
+*.wav binary
+*.mp3 binary
+
+# Other packaged/binary assets.
+*.zip binary
+*.7z binary
+*.rar binary
+*.gz binary
+*.tar binary
+*.bin binary
+*.hex binary
+*.uf2 binary
+*.elf binary
+*.woff binary
+*.woff2 binary

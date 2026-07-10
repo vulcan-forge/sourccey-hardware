@@ -1,0 +1,71 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.secret
+*.secrets
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local caches and temporary files
+.cache/
+.tmp/
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Build, packaging, and test output
+build/
+dist/
+out/
+bin/
+obj/
+coverage/
+*.log
+
+# Python tooling (if used for automation or documentation)
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Node tooling (if used for viewers, catalogs, or docs)
+node_modules/
+.npm/
+.parcel-cache/
+.next/
+
+# KiCad generated/local files
+*-backups/
+*.lck
+fp-info-cache
+
+# CAD application autosaves and lock files
+*.asv
+*.autosave
+*.lock
+~$*
+
