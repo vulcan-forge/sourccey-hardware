@@ -47,3 +47,14 @@ For an assembly, import the parts individually and arrange them on the build pla
 ## Documentation
 
 See the [Vulcan Robotics documentation](https://vulcanrobotics.ai/docs) for additional robot documentation and build information.
+
+## Licensing
+
+Unless stated otherwise in a subdirectory, this project is released under the [CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S-2.0)](LICENSE).
+This license permits personal, educational, commercial, and manufacturing use. If you distribute a modified design or a product based on it, you must preserve the notices, make the corresponding source available, and license the modified covered source under CERN-OHL-S-2.0. Private modifications do not need to be published unless they are distributed.
+
+Third-party symbols, footprints, models, and datasheets may have separate licenses. Preserve their notices and verify redistribution rights before committing them.
+
+## Disclaimer
+
+This hardware is provided without warranty. You are responsible for reviewing the design, complying with applicable laws and safety requirements, and validating any manufactured or modified hardware before use.
