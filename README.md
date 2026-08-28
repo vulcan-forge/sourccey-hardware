@@ -8,6 +8,7 @@ Last Updated: 04/21/2026
 This repository contains CAD source files (`.step`) for two major systems:
 - `Robot/`: robot body, arms, dome, holders, linear actuator parts, and accessories.
 - `Teleoperator/`: teleoperator enclosure and arm/control components.
+- `URDF/`: urdf assembly files for use in simulation.
 
 The files are organized as printable/manufacturable part-level CAD assets and are intended for review, iteration, and fabrication workflows.
 
