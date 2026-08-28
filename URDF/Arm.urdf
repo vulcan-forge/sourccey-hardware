@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="Arm">
+    <link name="Arm-Base-V3-v1">
+        <inertial>
+            <origin xyz="-0.024836922956550326 -0.004573076139556285 -0.03574108168861222" rpy="0.0 0.0 0.0" />
+            <mass value="0.2341580521278728" />
+            <inertia ixx="6.937757583855265e-05" iyy="0.00010626754288763277" izz="6.376703858322158e-05" ixy="2.026580536979002e-07" iyz="-1.2581861591547088e-06" ixz="2.1274268053429907e-08" />
+        </inertial>
+        <visual name="Arm-Base-V3-v1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Arm-Base-V3-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Arm-Base-V3-v1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Arm-Base-V3-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Feetech-Servo-Motor-v1">
+        <inertial>
+            <origin xyz="0.07705126306218256 0.021700908970269956 -0.01100953662144415" rpy="2.1325412980216383e-47 -0.0 0.0" />
+            <mass value="0.2646673118671472" />
+            <inertia ixx="6.542852314588894e-05" iyy="3.433866074898383e-05" izz="5.709510021731208e-05" ixy="-4.824630129622797e-22" iyz="1.3943026035094088e-07" ixz="-6.910058209816925e-18" />
+        </inertial>
+        <visual name="Feetech-Servo-Motor-v1_visual">
+            <origin xyz="0.01674999837598785 0.02249999999999999 -2.0191008109904374e-09" rpy="-1.5707963267948966 -1.5707963267948855 0" />
+            <geometry>
+                <mesh filename="meshes/Feetech-Servo-Motor-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Feetech-Servo-Motor-v1_collision">
+            <origin xyz="0.01674999837598785 0.02249999999999999 -2.0191008109904374e-09" rpy="-1.5707963267948966 -1.5707963267948855 0" />
+            <geometry>
+                <mesh filename="meshes/Feetech-Servo-Motor-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Shoulder-With-Gearbox-V3-v1">
+        <inertial>
+            <origin xyz="-0.0047842151713212286 0.038567909748405765 3.6672627201639334e-08" rpy="-2.034198241030689e-63 -0.0 0.0" />
+            <mass value="0.844139391110819" />
+            <inertia ixx="0.0007514593284477953" iyy="0.0006762215851131505" izz="0.0004597212708080667" ixy="6.433524319731298e-05" iyz="2.1809406792164481e-10" ixz="-1.6959038833380175e-10" />
+        </inertial>
+        <visual name="Shoulder-With-Gearbox-V3-v1_visual">
+            <origin xyz="-0.06305126162401196 6.661338147750939e-17 0.01087117798089912" rpy="1.5707963267948895 -2.8484861345356396e-16 1.5707963267948968" />
+            <geometry>
+                <mesh filename="meshes/Shoulder-With-Gearbox-V3-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Shoulder-With-Gearbox-V3-v1_collision">
+            <origin xyz="-0.06305126162401196 6.661338147750939e-17 0.01087117798089912" rpy="1.5707963267948895 -2.8484861345356396e-16 1.5707963267948968" />
+            <geometry>
+                <mesh filename="meshes/Shoulder-With-Gearbox-V3-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Feetech-Servo-Motor-v1-1">
+        <inertial>
+            <origin xyz="-0.02829618087895328 0.0594879073196915 0.02170090897026972" rpy="0.0 -0.0 0.0" />
+            <mass value="0.264667311867147" />
+            <inertia ixx="6.542852314589051e-05" iyy="5.7095100217312376e-05" izz="3.433866074898425e-05" ixy="6.396792817664477e-18" iyz="1.3943026035089993e-07" ixz="8.272843570980341e-19" />
+        </inertial>
+        <visual name="Feetech-Servo-Motor-v1-1_visual">
+            <origin xyz="-0.016750002019100818 -1.6240119404820064e-09 0.022499999999999805" rpy="-1.6909108951259016e-16 9.961275697978723e-16 1.5707963267948897" />
+            <geometry>
+                <mesh filename="meshes/Feetech-Servo-Motor-v1-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Feetech-Servo-Motor-v1-1_collision">
+            <origin xyz="-0.016750002019100818 -1.6240119404820064e-09 0.022499999999999805" rpy="-1.6909108951259016e-16 9.961275697978723e-16 1.5707963267948897" />
+            <geometry>
+                <mesh filename="meshes/Feetech-Servo-Motor-v1-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Arm-Bicep-v1">
+        <inertial>
+            <origin xyz="0.007248361495242328 -0.06591704529035068 -9.348899508793807e-05" rpy="1.0098803822502792e-31 -0.0 -5.473822126268817e-48" />
+            <mass value="1.242896847306747" />
+            <inertia ixx="0.002203084502895451" iyy="0.0014550434330205912" izz="0.003510584859551717" ixy="0.000400284221768028" iyz="1.8485970072119016e-06" ixz="2.8160951108168793e-06" />
+        </inertial>
+        <visual name="Arm-Bicep-v1_visual">
+            <origin xyz="-0.040240556603344066 0.002750000000000057 -0.044696177980478605" rpy="1.57079632679489 1.7973988569745286e-16 -1.570796326794893" />
+            <geometry>
+                <mesh filename="meshes/Arm-Bicep-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Arm-Bicep-v1_collision">
+            <origin xyz="-0.040240556603344066 0.002750000000000057 -0.044696177980478605" rpy="1.57079632679489 1.7973988569745286e-16 -1.570796326794893" />
+            <geometry>
+                <mesh filename="meshes/Arm-Bicep-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Feetech-Servo-Motor-v1-2">
+        <inertial>
+            <origin xyz="-0.027296180879372387 0.0549879123403608 0.021700908970266858" rpy="0.0 6.600314817684503e-63 5.22859921412721e-50" />
+            <mass value="0.26466731186714726" />
+            <inertia ixx="6.542852314586183e-05" iyy="5.709510021731301e-05" izz="3.433866074894325e-05" ixy="8.084662404667778e-18" iyz="1.3943026035138488e-07" ixz="7.655201441715244e-19" />
+        </inertial>
+        <visual name="Feetech-Servo-Motor-v1-2_visual">
+            <origin xyz="-0.016750002019520368 3.3966565160525873e-09 0.02249999999999698" rpy="-4.706948092866914e-16 2.2220821488068416e-15 1.5707963267948877" />
+            <geometry>
+                <mesh filename="meshes/Feetech-Servo-Motor-v1-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Feetech-Servo-Motor-v1-2_collision">
+            <origin xyz="-0.016750002019520368 3.3966565160525873e-09 0.02249999999999698" rpy="-4.706948092866914e-16 2.2220821488068416e-15 1.5707963267948877" />
+            <geometry>
+                <mesh filename="meshes/Feetech-Servo-Motor-v1-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Arm-Forearm-v1">
+        <inertial>
+            <origin xyz="-2.3646245318049708e-05 0.06774677204162732 -8.954207978897345e-06" rpy="2.3344810008351638e-32 -0.0 -1.7789921910373654e-47" />
+            <mass value="1.1540811630894656" />
+            <inertia ixx="0.0019372258470566543" iyy="0.0008128358612115641" izz="0.002617941632487045" ixy="1.298020085712523e-06" iyz="4.4399185895588315e-07" ixz="-4.160941850280531e-11" />
+        </inertial>
+        <visual name="Arm-Forearm-v1_visual">
+            <origin xyz="-0.052376266603343324 -0.0027500000000029346 0.04262117798005988" rpy="-1.570796326794908 -8.400894518412889e-16 1.5707963267948968" />
+            <geometry>
+                <mesh filename="meshes/Arm-Forearm-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Arm-Forearm-v1_collision">
+            <origin xyz="-0.052376266603343324 -0.0027500000000029346 0.04262117798005988" rpy="-1.570796326794908 -8.400894518412889e-16 1.5707963267948968" />
+            <geometry>
+                <mesh filename="meshes/Arm-Forearm-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Feetech-Servo-Motor-v1-3">
+        <inertial>
+            <origin xyz="0.02441377912020772 -0.4072009089702698 0.07036239234036089" rpy="0.0 -0.0 0.0" />
+            <mass value="0.2646673118671471" />
+            <inertia ixx="6.54285231458801e-05" iyy="3.4338660748989454e-05" izz="5.7095100217320616e-05" ixy="-4.336808689942018e-19" iyz="-1.3943026035048017e-07" ixz="7.15573433840433e-18" />
+        </inertial>
+        <visual name="Feetech-Servo-Motor-v1-3_visual">
+            <origin xyz="0.03288495798005964 -0.408 0.018799483396655856" rpy="1.570796326794896 -1.5707963267948861 0" />
+            <geometry>
+                <mesh filename="meshes/Feetech-Servo-Motor-v1-3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Feetech-Servo-Motor-v1-3_collision">
+            <origin xyz="0.03288495798005964 -0.408 0.018799483396655856" rpy="1.570796326794896 -1.5707963267948861 0" />
+            <geometry>
+                <mesh filename="meshes/Feetech-Servo-Motor-v1-3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Arm-Wrist-v1">
+        <inertial>
+            <origin xyz="0.0015547193154326867 0.031078139626895408 -3.20020859145842e-09" rpy="1.2235572356139464e-32 -0.0 8.758115402030107e-47" />
+            <mass value="0.4917509403982486" />
+            <inertia ixx="0.00019393181742097747" iyy="0.0003849007688216066" izz="0.0004630623690443595" ixy="-3.439221666663644e-05" iyz="8.860218971638424e-11" ixz="-1.8722880171205086e-11" />
+        </inertial>
+        <visual name="Arm-Wrist-v1_visual">
+            <origin xyz="-0.054451266603344345 -0.00274999999998542 0.011221177980060153" rpy="1.5707963267948863 -4.969843245232974e-16 1.570796326794712" />
+            <geometry>
+                <mesh filename="meshes/Arm-Wrist-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Arm-Wrist-v1_collision">
+            <origin xyz="-0.054451266603344345 -0.00274999999998542 0.011221177980060153" rpy="1.5707963267948863 -4.969843245232974e-16 1.570796326794712" />
+            <geometry>
+                <mesh filename="meshes/Arm-Wrist-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Feetech-Servo-Motor-v1-4">
+        <inertial>
+            <origin xyz="0.024413779120203385 -0.46863835574249446 0.08279983911258677" rpy="0.0 -0.0 0.0" />
+            <mass value="0.2646673118671472" />
+            <inertia ixx="6.542852314587316e-05" iyy="5.709510021728852e-05" izz="3.433866074898512e-05" ixy="-9.107298248878237e-18" iyz="-1.3943026035308226e-07" ixz="-1.0842021724855044e-19" />
+        </inertial>
+        <visual name="Feetech-Servo-Motor-v1-4_visual">
+            <origin xyz="0.024134957980059636 -0.4685000000000147 0.016049483396666335" rpy="-4.261300627051844e-16 1.5707963267947131 0" />
+            <geometry>
+                <mesh filename="meshes/Feetech-Servo-Motor-v1-4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Feetech-Servo-Motor-v1-4_collision">
+            <origin xyz="0.024134957980059636 -0.4685000000000147 0.016049483396666335" rpy="-4.261300627051844e-16 1.5707963267947131 0" />
+            <geometry>
+                <mesh filename="meshes/Feetech-Servo-Motor-v1-4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Gripper-Base-Back-v1">
+        <inertial>
+            <origin xyz="-1.754732327574615e-07 -0.004232821398031277 0.023047641157565267" rpy="0.0 -0.0 0.0" />
+            <mass value="0.4863478754766533" />
+            <inertia ixx="0.00025775523339863216" iyy="0.00020378471536272287" izz="0.00038155792717768254" ixy="-2.6050383536512784e-09" iyz="-1.6908620971875508e-05" ixz="-1.6939541852651675e-09" />
+        </inertial>
+        <visual name="Gripper-Base-Back-v1_visual">
+            <origin xyz="0.052221177980054816 -0.053451266603316575 0.05100000000001934" rpy="-3.141592653589782 1.570796326794606 0" />
+            <geometry>
+                <mesh filename="meshes/Gripper-Base-Back-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Gripper-Base-Back-v1_collision">
+            <origin xyz="0.052221177980054816 -0.053451266603316575 0.05100000000001934" rpy="-3.141592653589782 1.570796326794606 0" />
+            <geometry>
+                <mesh filename="meshes/Gripper-Base-Back-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Feetech-Servo-Motor-v1-5">
+        <inertial>
+            <origin xyz="0.040152177053127236 -0.017888355742494328 0.012221180879798843" rpy="-5.0943204384252763e-76 -0.0 0.0" />
+            <mass value="0.26466731186714737" />
+            <inertia ixx="3.433866074897818e-05" iyy="5.709510021731151e-05" izz="6.542852314589398e-05" ixy="1.3943026035048017e-07" iyz="-7.249509265883969e-18" ixz="3.983544452275722e-18" />
+        </inertial>
+        <visual name="Feetech-Servo-Motor-v1-5_visual">
+            <origin xyz="3.3966731560752807e-09 -0.01775000000001178 -0.012499997980061078" rpy="8.814734458616308e-14 1.0120267130000689e-14 1.8859895650535142e-13" />
+            <geometry>
+                <mesh filename="meshes/Feetech-Servo-Motor-v1-5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Feetech-Servo-Motor-v1-5_collision">
+            <origin xyz="3.3966731560752807e-09 -0.01775000000001178 -0.012499997980061078" rpy="8.814734458616308e-14 1.0120267130000689e-14 1.8859895650535142e-13" />
+            <geometry>
+                <mesh filename="meshes/Feetech-Servo-Motor-v1-5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Gripper-Base-Front-Angled-Camera-v1">
+        <inertial>
+            <origin xyz="0.025635039939659654 0.006788434123750875 0.02430386110902241" rpy="-5.0943204384252763e-76 -0.0 0.0" />
+            <mass value="0.40699505775076505" />
+            <inertia ixx="0.0003985555599829993" iyy="0.0006068219550467591" izz="0.00023363907866320416" ixy="2.272493928889842e-06" iyz="-2.118688805602413e-05" ixz="3.8076979748927414e-06" />
+        </inertial>
+        <visual name="Gripper-Base-Front-Angled-Camera-v1_visual">
+            <origin xyz="-0.029249996603335063 0.016500000000008442 0.06999999798004165" rpy="-3.1415926535897825 8.934078506038861e-14 -1.5707963267950829" />
+            <geometry>
+                <mesh filename="meshes/Gripper-Base-Front-Angled-Camera-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Gripper-Base-Front-Angled-Camera-v1_collision">
+            <origin xyz="-0.029249996603335063 0.016500000000008442 0.06999999798004165" rpy="-3.1415926535897825 8.934078506038861e-14 -1.5707963267950829" />
+            <geometry>
+                <mesh filename="meshes/Gripper-Base-Front-Angled-Camera-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Gripper-Gear-ASSEMBLY-TEST-v1">
+        <inertial>
+            <origin xyz="-8.798019068834151e-10 -1.9171391141270533e-09 0.0045000000000017335" rpy="0.0 -0.0 0.0" />
+            <mass value="0.06414456756209834" />
+            <inertia ixx="5.067420837407549e-06" iyy="5.067420837407549e-06" izz="9.268890012723073e-06" ixy="-1.355252715606879e-20" iyz="1.3010426069826053e-18" ixz="-1.2791968604585833e-34" />
+        </inertial>
+        <visual name="Gripper-Gear-ASSEMBLY-TEST-v1_visual">
+            <origin xyz="-8.798018980016309e-10 -1.917139957896552e-09 1.7053025658242404e-15" rpy="-1.865865576852112e-13 -2.626602873188404e-15 -1.0059034790059944e-14" />
+            <geometry>
+                <mesh filename="meshes/Gripper-Gear-ASSEMBLY-TEST-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Gripper-Gear-ASSEMBLY-TEST-v1_collision">
+            <origin xyz="-8.798018980016309e-10 -1.917139957896552e-09 1.7053025658242404e-15" rpy="-1.865865576852112e-13 -2.626602873188404e-15 -1.0059034790059944e-14" />
+            <geometry>
+                <mesh filename="meshes/Gripper-Gear-ASSEMBLY-TEST-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Arm-Base-V3-v1_Rigid-1" type="fixed">
+        <origin xyz="0.05233622014901163 6.859801863787153e-19 -0.024715040894069628" rpy="-2.775557561562815e-17 1.4243287214916498e-14 3.141592653589793" />
+        <parent link="Arm-Base-V3-v1" />
+        <child link="Feetech-Servo-Motor-v1" />
+    </joint>
+    <joint name="Shoulder-With-Gearbox-V3-v1_Rigid-4" type="fixed">
+        <origin xyz="-0.06305126000000001 0.04100000000000001 0.028296179999999973" rpy="-1.5707963267948961 -1.5707963267948961 0" />
+        <parent link="Shoulder-With-Gearbox-V3-v1" />
+        <child link="Feetech-Servo-Motor-v1-1" />
+    </joint>
+    <joint name="Arm-Bicep-v1_Rigid-6" type="fixed">
+        <origin xyz="-0.040240559999999787 -0.11974999999999981 -0.02729617999999989" rpy="1.5707963267948977 1.5707963267948957 0" />
+        <parent link="Arm-Bicep-v1" />
+        <child link="Feetech-Servo-Motor-v1-2" />
+    </joint>
+    <joint name="Arm-Forearm-v1_Rigid-8" type="fixed">
+        <origin xyz="-0.07117574999999894 -0.26574999999999593 -0.024413780000000208" rpy="3.141592653589793 -1.5707963267948952 0" />
+        <parent link="Arm-Forearm-v1" />
+        <child link="Feetech-Servo-Motor-v1-3" />
+    </joint>
+    <joint name="Arm-Wrist-v1_Rigid-10" type="fixed">
+        <origin xyz="-0.07050075000000215 -0.4205000000000022 -0.0244137800000004" rpy="3.141592653589793 -1.5707963267948954 0" />
+        <parent link="Arm-Wrist-v1" />
+        <child link="Feetech-Servo-Motor-v1-4" />
+    </joint>
+    <joint name="Gripper-Base-Back-v1_Rigid-12" type="fixed">
+        <origin xyz="0.012221179999999828 -0.05345126999999982 0.0020000000000048603" rpy="-1.5707963267949874 8.978648026117131e-14 1.5707963267948966" />
+        <parent link="Gripper-Base-Back-v1" />
+        <child link="Feetech-Servo-Motor-v1-5" />
+    </joint>
+    <joint name="Gripper-Base-Back-v1_Rigid-13" type="fixed">
+        <origin xyz="-0.017778820000003016 -0.02420126999999691 0.03450000000000223" rpy="1.5707963267948057 8.978648026117131e-14 1.5707963267948966" />
+        <parent link="Gripper-Base-Back-v1" />
+        <child link="Gripper-Base-Front-Angled-Camera-v1" />
+    </joint>
+    <joint name="shoulder_pan" type="revolute">
+        <origin xyz="0.07705126000000007 0.03499999999999999 -0.010871179999999736" rpy="3.4450928483976567e-16 -3.1900305907108096e-15 9.86076131526302e-32" />
+        <parent link="Feetech-Servo-Motor-v1" />
+        <child link="Shoulder-With-Gearbox-V3-v1" />
+        <axis xyz="-2.702154975338666e-16 3.4450928483976646e-16 1.0" />
+        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="shoulder_lift" type="revolute">
+        <origin xyz="-0.028296179999999983 0.05962626000000003 0.03499999999999997" rpy="-1.5707963267948968 6.125368411724997e-16 1.570796326794896" />
+        <parent link="Feetech-Servo-Motor-v1-1" />
+        <child link="Arm-Bicep-v1" />
+        <axis xyz="-1.0000000000000022 -7.984489878059184e-16 -8.556395221968228e-16" />
+        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="elbow_flex" type="revolute">
+        <origin xyz="-0.027296179999999504 0.055126270000000324 0.0349999999999994" rpy="1.5707963267948974 1.1006918418051147e-15 1.5707963267948986" />
+        <parent link="Feetech-Servo-Motor-v1-2" />
+        <child link="Arm-Forearm-v1" />
+        <axis xyz="1.0000000000000195 -1.1021770808896294e-15 -1.2116079980132914e-15" />
+        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="wrist_flex" type="revolute">
+        <origin xyz="0.02441378 -0.4205 0.07050075" rpy="-3.1415926535897927 -1.5707963267948961 0" />
+        <parent link="Feetech-Servo-Motor-v1-3" />
+        <child link="Arm-Wrist-v1" />
+        <axis xyz="0.9999999999999769 -1.3047061815035669e-15 1.2127764798815551e-15" />
+        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="wrist_roll" type="revolute">
+        <origin xyz="0.02441378 -0.48625 0.06950075" rpy="1.5707963267949865 -1.5777218104420236e-30 0.0" />
+        <parent link="Feetech-Servo-Motor-v1-4" />
+        <child link="Gripper-Base-Back-v1" />
+        <axis xyz="0.0 8.978648026117131e-14 1.0" />
+        <limit lower="-3.141593" upper="3.141593" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="gripper" type="revolute">
+        <origin xyz="0.053451269999998934 -0.03550000000000111 0.012221179999996777" rpy="1.5707963267948966 1.5707963267947707 0" />
+        <parent link="Feetech-Servo-Motor-v1-5" />
+        <child link="Gripper-Gear-ASSEMBLY-TEST-v1" />
+        <axis xyz="0.0 5.371322496429065e-32 1.0" />
+        <limit lower="-1.570796" upper="1.570796" effort="1000000" velocity="1000000" />
+    </joint>
+</robot>
