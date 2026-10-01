@@ -1,0 +1,3664 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="SourcceyMkV">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.00932825677 0.00888991535 0.0343397835" rpy="0 0 0" />
+      <mass value="3.80341334153" />
+      <inertia ixx="0.00531953220936" iyy="0.00541814776097" izz="0.00471636590556" ixy="0.000729923793717" iyz="-0.000253901466419" ixz="0.000272266278323" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="meshes/0000_Linear_Actuator_Base_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="meshes/0000_Linear_Actuator_Base_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Level_1_Plate_v1_1">
+    <inertial>
+      <origin xyz="0.0940533498 0.0940533498 -0.00514472555" rpy="0 0 0" />
+      <mass value="2.68427626973" />
+      <inertia ixx="0.00993918300845" iyy="0.00993918300841" izz="0.0198336211643" ixy="0.00515719154557" iyz="-2.53649371026e-05" ixz="-2.53649371025e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="meshes/0001_Level_1_Plate_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="meshes/0001_Level_1_Plate_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Level_1_Plate_v1_2">
+    <inertial>
+      <origin xyz="-0.0940533498 0.0940533498 -0.00514472555" rpy="0 0 0" />
+      <mass value="2.68427626973" />
+      <inertia ixx="0.00993918300841" iyy="0.00993918300845" izz="0.0198336211643" ixy="-0.00515719154557" iyz="-2.53649371025e-05" ixz="2.53649371026e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.76941795e-16 -3.34018126e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0002_Level_1_Plate_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.76941795e-16 -3.34018126e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0002_Level_1_Plate_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Level_1_Plate_v1_3">
+    <inertial>
+      <origin xyz="-0.0940533498 -0.0940533498 -0.00514472555" rpy="0 0 0" />
+      <mass value="2.68427626973" />
+      <inertia ixx="0.00993918300845" iyy="0.00993918300841" izz="0.0198336211643" ixy="0.00515719154557" iyz="2.53649371026e-05" ixz="2.53649371025e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 -3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0003_Level_1_Plate_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 -3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0003_Level_1_Plate_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Level_1_Plate_v1_4">
+    <inertial>
+      <origin xyz="0.0940533498 -0.0940533498 -0.00514472555" rpy="0 0 0" />
+      <mass value="2.68427626973" />
+      <inertia ixx="0.00993918300841" iyy="0.00993918300845" izz="0.0198336211643" ixy="-0.00515719154557" iyz="2.53649371025e-05" ixz="-2.53649371026e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0004_Level_1_Plate_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0004_Level_1_Plate_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wheel_Holder_v1_1">
+    <inertial>
+      <origin xyz="0.00800783941 0.0030911828 -0.0223781165" rpy="0 0 0" />
+      <mass value="1.29015421768" />
+      <inertia ixx="0.00147716058506" iyy="0.00102881200201" izz="0.00144005765045" ixy="-3.6966009961e-05" iyz="7.67875276996e-05" ixz="-5.09398705856e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159265 9.46704359e-15 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0005_Wheel_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159265 9.46704359e-15 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0005_Wheel_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wheel_Holder_v1_2">
+    <inertial>
+      <origin xyz="-0.00800783941 -0.0030911828 -0.0223781165" rpy="0 0 0" />
+      <mass value="1.29015421768" />
+      <inertia ixx="0.00147716058506" iyy="0.00102881200201" izz="0.00144005765045" ixy="-3.6966009961e-05" iyz="-7.67875276996e-05" ixz="5.09398705856e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159265 9.46704359e-15 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0006_Wheel_Holder_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159265 9.46704359e-15 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0006_Wheel_Holder_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wheel_Holder_MIRRORED_v1_1">
+    <inertial>
+      <origin xyz="0.0936763803 -0.104775403 -0.0223781167" rpy="0 0 0" />
+      <mass value="1.29015420875" />
+      <inertia ixx="0.00102881199015" iyy="0.00147716057766" izz="0.00144005763852" ixy="-3.69660152032e-05" iyz="5.09398759657e-05" ixz="-7.67875312598e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-3.14159265 -1.44238493e-14 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0007_Wheel_Holder_MIRRORED_v1_1_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-3.14159265 -1.44238493e-14 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0007_Wheel_Holder_MIRRORED_v1_1_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wheel_Holder_MIRRORED_v1_2">
+    <inertial>
+      <origin xyz="-0.0936763803 0.104775403 -0.0223781167" rpy="0 0 0" />
+      <mass value="1.29015420875" />
+      <inertia ixx="0.00102881199015" iyy="0.00147716057766" izz="0.00144005763852" ixy="-3.69660152032e-05" iyz="-5.09398759657e-05" ixz="7.67875312598e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-3.14159265 -1.44238493e-14 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0008_Wheel_Holder_MIRRORED_v1_2_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-3.14159265 -1.44238493e-14 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0008_Wheel_Holder_MIRRORED_v1_2_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wheel_Motor_v1_1">
+    <inertial>
+      <origin xyz="0.000866853324 0.000866853324 -9.70400092e-05" rpy="0 0 0" />
+      <mass value="0.656667118855" />
+      <inertia ixx="0.00026786728122" iyy="0.00026786728122" izz="0.000429224437175" ixy="-0.000161730582614" iyz="2.0743815601e-06" ixz="2.0743815601e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.57079633 9.46704359e-15 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0009_Wheel_Motor_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.57079633 9.46704359e-15 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0009_Wheel_Motor_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wheel_Motor_v1_2">
+    <inertial>
+      <origin xyz="0.000866853324 0.000866853324 -9.70400092e-05" rpy="0 0 0" />
+      <mass value="0.656667118855" />
+      <inertia ixx="0.00026786728122" iyy="0.00026786728122" izz="0.000429224437175" ixy="-0.000161730582614" iyz="2.07438156009e-06" ixz="2.0743815601e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.57079633 -1.44238493e-14 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0010_Wheel_Motor_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.57079633 -1.44238493e-14 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0010_Wheel_Motor_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wheel_Motor_v1_3">
+    <inertial>
+      <origin xyz="-0.000866853324 -0.000866853324 -9.70400092e-05" rpy="0 0 0" />
+      <mass value="0.656667118855" />
+      <inertia ixx="0.00026786728122" iyy="0.00026786728122" izz="0.000429224437175" ixy="-0.000161730582614" iyz="-2.0743815601e-06" ixz="-2.0743815601e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.57079633 9.46704359e-15 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0011_Wheel_Motor_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.57079633 9.46704359e-15 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0011_Wheel_Motor_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wheel_Motor_v1_4">
+    <inertial>
+      <origin xyz="-0.000866853324 -0.000866853324 -9.70400092e-05" rpy="0 0 0" />
+      <mass value="0.656667118855" />
+      <inertia ixx="0.00026786728122" iyy="0.00026786728122" izz="0.000429224437175" ixy="-0.000161730582614" iyz="-2.0743815601e-06" ixz="-2.0743815601e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.57079633 -1.44238493e-14 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0012_Wheel_Motor_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.57079633 -1.44238493e-14 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0012_Wheel_Motor_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wheel_Coupler_v1_1">
+    <inertial>
+      <origin xyz="0.00245270232 0.00245270232 3.5304755e-05" rpy="0 0 0" />
+      <mass value="0.0165586744974" />
+      <inertia ixx="9.41228928686e-07" iyy="9.41228928686e-07" izz="1.63699517845e-06" ixy="-6.93067894684e-07" iyz="4.57549650094e-09" ixz="4.5754965009e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.00784888527 -0.00784888527 -1.52655666e-16" rpy="-0.785398163 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0013_Wheel_Coupler_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.00784888527 -0.00784888527 -1.52655666e-16" rpy="-0.785398163 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0013_Wheel_Coupler_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wheel_Coupler_v1_2">
+    <inertial>
+      <origin xyz="0.00245270232 0.00245270232 3.5304755e-05" rpy="0 0 0" />
+      <mass value="0.0165586744974" />
+      <inertia ixx="9.41228928686e-07" iyy="9.41228928686e-07" izz="1.63699517845e-06" ixy="-6.93067894684e-07" iyz="4.57549650092e-09" ixz="4.57549650102e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.00784888527 -0.00784888527 9.71445147e-17" rpy="-0.785398163 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0014_Wheel_Coupler_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.00784888527 -0.00784888527 9.71445147e-17" rpy="-0.785398163 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0014_Wheel_Coupler_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wheel_Coupler_v1_3">
+    <inertial>
+      <origin xyz="-0.00245270232 -0.00245270232 3.5304755e-05" rpy="0 0 0" />
+      <mass value="0.0165586744974" />
+      <inertia ixx="9.41228928686e-07" iyy="9.41228928686e-07" izz="1.63699517845e-06" ixy="-6.93067894684e-07" iyz="-4.57549650092e-09" ixz="-4.57549650091e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0.00784888527 0.00784888527 9.71445147e-17" rpy="2.35619449 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0015_Wheel_Coupler_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.00784888527 0.00784888527 9.71445147e-17" rpy="2.35619449 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0015_Wheel_Coupler_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wheel_Coupler_v1_4">
+    <inertial>
+      <origin xyz="-0.00245270232 -0.00245270232 3.5304755e-05" rpy="0 0 0" />
+      <mass value="0.0165586744974" />
+      <inertia ixx="9.41228928686e-07" iyy="9.41228928686e-07" izz="1.63699517845e-06" ixy="-6.93067894684e-07" iyz="-4.57549650097e-09" ixz="-4.5754965009e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0.00784888527 0.00784888527 -1.52655666e-16" rpy="2.35619449 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0016_Wheel_Coupler_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.00784888527 0.00784888527 -1.52655666e-16" rpy="2.35619449 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0016_Wheel_Coupler_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Mecanum_Wheel_v1_1">
+    <inertial>
+      <origin xyz="-0.000438906622 -0.000438851145 -2.15290642e-08" rpy="0 0 0" />
+      <mass value="2.37911786602" />
+      <inertia ixx="0.00242006250793" iyy="0.0024200633775" izz="0.00182726033782" ixy="0.000592806413188" iyz="2.40948577063e-09" ixz="-2.04941896168e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.44238493e-14 1.43013847e-14 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0017_Mecanum_Wheel_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.44238493e-14 1.43013847e-14 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0017_Mecanum_Wheel_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Mecanum_Wheel_v1_2">
+    <inertial>
+      <origin xyz="0.000438906622 0.000438851145 -2.15290642e-08" rpy="0 0 0" />
+      <mass value="2.37911786602" />
+      <inertia ixx="0.00242006250793" iyy="0.0024200633775" izz="0.00182726033782" ixy="0.000592806413188" iyz="-2.40948577063e-09" ixz="2.04941896168e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.44238493e-14 1.43013847e-14 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0018_Mecanum_Wheel_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.44238493e-14 1.43013847e-14 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0018_Mecanum_Wheel_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Mecanum_Wheel_MIRRORED_v1_1">
+    <inertial>
+      <origin xyz="0.0711495451 0.0711495107 -3.74282857e-08" rpy="0 0 0" />
+      <mass value="2.37910663383" />
+      <inertia ixx="0.00242005153266" iyy="0.00242005058509" izz="0.00182725100344" ixy="0.000592802876225" iyz="-1.96185088184e-09" ixz="1.71035390018e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-9.46704359e-15 9.46704352e-15 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0019_Mecanum_Wheel_MIRRORED_v1_1_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-9.46704359e-15 9.46704352e-15 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0019_Mecanum_Wheel_MIRRORED_v1_1_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Mecanum_Wheel_MIRRORED_v1_2">
+    <inertial>
+      <origin xyz="-0.0711495451 -0.0711495107 -3.74282857e-08" rpy="0 0 0" />
+      <mass value="2.37910663383" />
+      <inertia ixx="0.00242005153266" iyy="0.00242005058509" izz="0.00182725100344" ixy="0.000592802876225" iyz="1.96185088173e-09" ixz="-1.71035389324e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-9.46704359e-15 9.46704352e-15 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0020_Mecanum_Wheel_MIRRORED_v1_2_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-9.46704359e-15 9.46704352e-15 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0020_Mecanum_Wheel_MIRRORED_v1_2_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Battery_Holder_v1_1">
+    <inertial>
+      <origin xyz="-0.00421435537 0.0042143562 0.0257448831" rpy="0 0 0" />
+      <mass value="2.81026825472" />
+      <inertia ixx="0.00879069084774" iyy="0.00879069086803" izz="0.0115449772598" ixy="-0.00362997668331" iyz="-0.000312588850333" ixz="0.000312588855795" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="4.0947002e-31 -4.0947002e-31 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0021_Battery_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="4.0947002e-31 -4.0947002e-31 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0021_Battery_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Linear_Actator_Stabilizer_v1_1">
+    <inertial>
+      <origin xyz="0.013352716 -0.0142998571 -0.00685444599" rpy="0 0 0" />
+      <mass value="3.74657725716" />
+      <inertia ixx="0.0145728676268" iyy="0.0147818109882" izz="0.00728130393529" ixy="0.00117457499872" iyz="-0.00184320392352" ixz="0.00176412063687" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-4.99591341e-16 1.82960215e-33 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0022_Linear_Actator_Stabilizer_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-4.99591341e-16 1.82960215e-33 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0022_Linear_Actator_Stabilizer_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Battery_Holder_Lid_v1_1">
+    <inertial>
+      <origin xyz="0.00775112614 0.00775112614 0.00245632958" rpy="0 0 0" />
+      <mass value="0.404263066456" />
+      <inertia ixx="0.000538346483112" iyy="0.000538346483112" izz="0.00107503840989" ixy="-0.000327153931423" iyz="-5.6232143026e-07" ixz="-5.6232143026e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-3.84069596e-31 4.08721499e-31 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0023_Battery_Holder_Lid_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-3.84069596e-31 4.08721499e-31 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0023_Battery_Holder_Lid_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Bottom_Wall_Back_v1_1">
+    <inertial>
+      <origin xyz="-0.127625395 0.127704888 0.106494953" rpy="0 0 0" />
+      <mass value="2.94278434541" />
+      <inertia ixx="0.0260147582437" iyy="0.0260070122955" izz="0.0255774095844" ixy="-0.0116012649705" iyz="5.0462976379e-05" ixz="-6.68810946073e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="5.89015071e-31 -1.15375882e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0024_Bottom_Wall_Back_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="5.89015071e-31 -1.15375882e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0024_Bottom_Wall_Back_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="First_Level_Hinge_Wall_Lower_v1_1">
+    <inertial>
+      <origin xyz="0.112786966 0.112083659 0.0453749333" rpy="0 0 0" />
+      <mass value="1.9952750228" />
+      <inertia ixx="0.0160952028562" iyy="0.0161205805249" izz="0.0272056660199" ixy="0.0130236835251" iyz="0.000329085414295" ixz="0.000309943390925" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0025_First_Level_Hinge_Wall_Lower_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0025_First_Level_Hinge_Wall_Lower_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="First_Level_Hinge_Wall_Upper_v1_1">
+    <inertial>
+      <origin xyz="0.113004123 0.11219088 0.169529129" rpy="0 0 0" />
+      <mass value="1.9183729292" />
+      <inertia ixx="0.0148985766236" iyy="0.0149276733797" izz="0.0258607001097" ixy="0.0123567737305" iyz="-0.00028893997367" ixz="-0.000268139132206" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0026_First_Level_Hinge_Wall_Upper_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0026_First_Level_Hinge_Wall_Upper_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Mirrored_Hinge_Wall_Lower_v1_1">
+    <inertial>
+      <origin xyz="-0.112083659 -0.112786966 0.0453749333" rpy="0 0 0" />
+      <mass value="1.9952750228" />
+      <inertia ixx="0.0161205805249" iyy="0.0160952028562" izz="0.0272056660199" ixy="0.0130236835251" iyz="-0.000309943390926" ixz="-0.000329085414295" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="4.0198838e-16 -4.44870041e-33 -3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0027_Mirrored_Hinge_Wall_Lower_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="4.0198838e-16 -4.44870041e-33 -3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0027_Mirrored_Hinge_Wall_Lower_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Mirrored_Hinge_Wall_Upper_v1_1">
+    <inertial>
+      <origin xyz="-0.11219088 -0.113004123 0.169529129" rpy="0 0 0" />
+      <mass value="1.9183729292" />
+      <inertia ixx="0.0149276733797" iyy="0.0148985766236" izz="0.0258607001098" ixy="0.0123567737305" iyz="0.000268139132207" ixz="0.00028893997367" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="7.97789485e-16 2.52804847e-16 -3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0028_Mirrored_Hinge_Wall_Upper_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="7.97789485e-16 2.52804847e-16 -3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0028_Mirrored_Hinge_Wall_Upper_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Bottom_Wall_Front_LIDAR_v1_1">
+    <inertial>
+      <origin xyz="0.125546479 -0.125546246 0.106372176" rpy="0 0 0" />
+      <mass value="3.79435017395" />
+      <inertia ixx="0.0336178680859" iyy="0.0336177875267" izz="0.0304689026708" ixy="-0.0137068218927" iyz="-0.000278905982454" ixz="0.000278875529934" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="meshes/0029_Bottom_Wall_Front_LIDAR_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <geometry>
+        <mesh filename="meshes/0029_Bottom_Wall_Front_LIDAR_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Door_Assembly_v1_1">
+    <inertial>
+      <origin xyz="-0.145387285 -0.139794869 -2.91789624e-07" rpy="0 0 0" />
+      <mass value="2.97965510301" />
+      <inertia ixx="0.0113263384648" iyy="0.0117603902236" izz="0.0103784565168" ixy="0.0047469321914" iyz="1.82231003031e-07" ixz="1.50224610272e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159265 -2.07799186e-14 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0030_Door_Assembly_v1_1_Hinge_Door_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159265 -2.07799186e-14 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0030_Door_Assembly_v1_1_Hinge_Door_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-6.28036983e-18 3.14018492e-17 -9.71445147e-17" rpy="-1.53590142e-14 -1.39175229e-14 -3.10057742" />
+      <geometry>
+        <mesh filename="meshes/0031_Door_Assembly_v1_1_Door_Handle_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-6.28036983e-18 3.14018492e-17 -9.71445147e-17" rpy="-1.53590142e-14 -1.39175229e-14 -3.10057742" />
+      <geometry>
+        <mesh filename="meshes/0031_Door_Assembly_v1_1_Door_Handle_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Door_Assembly_v1_2">
+    <inertial>
+      <origin xyz="0.139794869 0.145387285 2.91789625e-07" rpy="0 0 0" />
+      <mass value="2.97965510301" />
+      <inertia ixx="0.0117603902236" iyy="0.0113263384648" izz="0.0103784565168" ixy="0.0047469321914" iyz="1.50224610231e-07" ixz="1.82231003079e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0033_Door_Assembly_v1_2_Hinge_Door_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0033_Door_Assembly_v1_2_Hinge_Door_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-3.14018492e-17 6.28036983e-18 9.71445147e-17" rpy="3.14159265 -8.32667268e-17 1.52978109" />
+      <geometry>
+        <mesh filename="meshes/0034_Door_Assembly_v1_2_Door_Handle_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-3.14018492e-17 6.28036983e-18 9.71445147e-17" rpy="3.14159265 -8.32667268e-17 1.52978109" />
+      <geometry>
+        <mesh filename="meshes/0034_Door_Assembly_v1_2_Door_Handle_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Side_Flares_v1_1">
+    <inertial>
+      <origin xyz="0.0128195415 -9.39514708e-10 0.0821230954" rpy="0 0 0" />
+      <mass value="0.82531053957" />
+      <inertia ixx="0.0026653820386" iyy="0.00239671552689" izz="0.000556105202149" ixy="-1.14570265527e-10" iyz="5.22242649236e-10" ixz="0.000110323402344" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.58818678e-21 -5.27355937e-16 0" />
+      <geometry>
+        <mesh filename="meshes/0036_Side_Flares_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.58818678e-21 -5.27355937e-16 0" />
+      <geometry>
+        <mesh filename="meshes/0036_Side_Flares_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Side_Flares_v1_2">
+    <inertial>
+      <origin xyz="9.39514708e-10 0.0128195415 0.0821230954" rpy="0 0 0" />
+      <mass value="0.82531053957" />
+      <inertia ixx="0.00239671552689" iyy="0.0026653820386" izz="0.000556105202149" ixy="1.1457026553e-10" iyz="0.000110323402344" ixz="-5.22242649234e-10" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.58818678e-21 -5.27355937e-16 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0037_Side_Flares_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.58818678e-21 -5.27355937e-16 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0037_Side_Flares_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Side_Flares_v1_3">
+    <inertial>
+      <origin xyz="-0.0128195415 9.39514709e-10 0.0821230954" rpy="0 0 0" />
+      <mass value="0.82531053957" />
+      <inertia ixx="0.0026653820386" iyy="0.00239671552689" izz="0.000556105202149" ixy="-1.14570265547e-10" iyz="-5.22242649227e-10" ixz="-0.000110323402344" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.58818678e-21 -6.42731819e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0038_Side_Flares_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.58818678e-21 -6.42731819e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0038_Side_Flares_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Side_Flares_v1_4">
+    <inertial>
+      <origin xyz="-9.39514707e-10 -0.0128195415 0.0821230954" rpy="0 0 0" />
+      <mass value="0.82531053957" />
+      <inertia ixx="0.00239671552689" iyy="0.0026653820386" izz="0.000556105202149" ixy="1.14570265497e-10" iyz="-0.000110323402344" ixz="5.22242649248e-10" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.58818678e-21 -5.27355937e-16 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0039_Side_Flares_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.58818678e-21 -5.27355937e-16 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0039_Side_Flares_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Fuse_Holder_v1_1">
+    <inertial>
+      <origin xyz="-0.00177768993 0.00177768993 0" rpy="0 0 0" />
+      <mass value="0.0581483366294" />
+      <inertia ixx="1.77422695328e-05" iyy="1.77422695328e-05" izz="6.67758774802e-06" ixy="-3.21878591354e-06" iyz="0" ixz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="8.15830689e-17 8.15830689e-17 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0040_Fuse_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="8.15830689e-17 8.15830689e-17 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0040_Fuse_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Level_2_Base_Plate_v1_1">
+    <inertial>
+      <origin xyz="-0.111168862 -0.111168862 0.00501248913" rpy="0 0 0" />
+      <mass value="1.46659252461" />
+      <inertia ixx="0.00452886239803" iyy="0.00452886239803" izz="0.00903308086954" ixy="0.00369112747429" iyz="-3.3471212154e-07" ixz="-3.3471212154e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="9.79497222e-31 -2.15088521e-77 -2.98824187e-15" />
+      <geometry>
+        <mesh filename="meshes/0041_Level_2_Base_Plate_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="9.79497222e-31 -2.15088521e-77 -2.98824187e-15" />
+      <geometry>
+        <mesh filename="meshes/0041_Level_2_Base_Plate_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Level_2_Base_Plate_v1_2">
+    <inertial>
+      <origin xyz="0.111168862 -0.111168862 0.00501248913" rpy="0 0 0" />
+      <mass value="1.46659252461" />
+      <inertia ixx="0.00452886239803" iyy="0.00452886239803" izz="0.00903308086954" ixy="-0.00369112747429" iyz="-3.3471212154e-07" ixz="3.34712121554e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-3.0468777e-32 -3.01802269e-45 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0042_Level_2_Base_Plate_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-3.0468777e-32 -3.01802269e-45 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0042_Level_2_Base_Plate_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Level_2_Base_Plate_v1_3">
+    <inertial>
+      <origin xyz="0.111168862 0.111168862 0.00501248913" rpy="0 0 0" />
+      <mass value="1.46659252461" />
+      <inertia ixx="0.00452886239803" iyy="0.00452886239803" izz="0.00903308086954" ixy="0.00369112747429" iyz="3.3471212154e-07" ixz="3.34712121554e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-3.0468777e-32 -3.01802269e-45 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0043_Level_2_Base_Plate_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-3.0468777e-32 -3.01802269e-45 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0043_Level_2_Base_Plate_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Level_2_Base_Plate_v1_4">
+    <inertial>
+      <origin xyz="-0.111168862 0.111168862 0.00501248913" rpy="0 0 0" />
+      <mass value="1.46659252461" />
+      <inertia ixx="0.00452886239803" iyy="0.00452886239803" izz="0.00903308086954" ixy="-0.00369112747429" iyz="3.34712121547e-07" ixz="-3.3471212154e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.15375882e-16 -1.15375882e-16 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0044_Level_2_Base_Plate_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.15375882e-16 -1.15375882e-16 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0044_Level_2_Base_Plate_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Plate_Connector_v1_1">
+    <inertial>
+      <origin xyz="1.43496326e-14 -3.27983478e-18 -0.00259722212" rpy="0 0 0" />
+      <mass value="0.0425155598523" />
+      <inertia ixx="9.54342822759e-06" iyy="3.80253748096e-06" izz="1.31741468656e-05" ixy="2.78888023786e-21" iyz="-6.83663016571e-22" ixz="1.08420217249e-18" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="2.05861193e-45 6.63257745e-75 -3.06916196e-30" />
+      <geometry>
+        <mesh filename="meshes/0045_Plate_Connector_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="2.05861193e-45 6.63257745e-75 -3.06916196e-30" />
+      <geometry>
+        <mesh filename="meshes/0045_Plate_Connector_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Plate_Connector_v1_2">
+    <inertial>
+      <origin xyz="3.27983478e-18 1.4321877e-14 -0.00259722212" rpy="0 0 0" />
+      <mass value="0.0425155598523" />
+      <inertia ixx="3.80253748096e-06" iyy="9.54342822759e-06" izz="1.31741468656e-05" ixy="-2.437352064e-21" iyz="2.16840434497e-19" ixz="6.83663016571e-22" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="2.05861193e-45 -2.05861193e-45 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0046_Plate_Connector_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="2.05861193e-45 -2.05861193e-45 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0046_Plate_Connector_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Plate_Connector_v1_3">
+    <inertial>
+      <origin xyz="-1.43496326e-14 2.98017799e-18 -0.00259722212" rpy="0 0 0" />
+      <mass value="0.0425155598523" />
+      <inertia ixx="9.54342822759e-06" iyy="3.80253748096e-06" izz="1.31741468656e-05" ixy="-3.16946222803e-20" iyz="1.76492071926e-21" ixz="-8.67361737988e-19" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.15375882e-16 -2.30751765e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0047_Plate_Connector_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.15375882e-16 -2.30751765e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0047_Plate_Connector_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Plate_Connector_v1_4">
+    <inertial>
+      <origin xyz="-3.27983478e-18 -1.42941214e-14 -0.00259722212" rpy="0 0 0" />
+      <mass value="0.0425155598523" />
+      <inertia ixx="3.80253748096e-06" iyy="9.54342822759e-06" izz="1.31741468656e-05" ixy="1.40147617035e-20" iyz="-6.50521303491e-19" ixz="-6.83663016573e-22" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-8.7581154e-46 1.009966e-30 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0048_Plate_Connector_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-8.7581154e-46 1.009966e-30 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0048_Plate_Connector_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="IMU_Bracket_v1_1">
+    <inertial>
+      <origin xyz="1.04083409e-15 5.82867088e-15 -9.27488453e-05" rpy="0 0 0" />
+      <mass value="0.0354890663886" />
+      <inertia ixx="2.90462635711e-06" iyy="2.90462635711e-06" izz="5.66199218289e-06" ixy="7.96527709272e-07" iyz="2.16840434497e-19" ixz="2.16840434497e-19" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.45565845e-45 1.45565845e-45 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0049_IMU_Bracket_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.45565845e-45 1.45565845e-45 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0049_IMU_Bracket_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="PCB_Holder_v1_1">
+    <inertial>
+      <origin xyz="-7.47589832e-05 7.47518746e-05 0.033713075" rpy="0 0 0" />
+      <mass value="1.4485677298" />
+      <inertia ixx="0.00494736780206" iyy="0.00494736033271" izz="0.00681167658201" ixy="-0.00227001893325" iyz="3.34877332685e-06" ixz="-3.34870339166e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.04083409e-17 -2.78542285e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0050_PCB_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.04083409e-17 -2.78542285e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0050_PCB_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Second_Level_Front_v1_1">
+    <inertial>
+      <origin xyz="0.126728226 -0.126727835 0.0962331237" rpy="0 0 0" />
+      <mass value="3.16212477445" />
+      <inertia ixx="0.0277284689843" iyy="0.0277283706728" izz="0.0281520407713" ixy="-0.0126810281537" iyz="0.000886824165955" ixz="-0.000886813850918" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="2.05861193e-45 6.63257745e-75 -3.06916196e-30" />
+      <geometry>
+        <mesh filename="meshes/0051_Second_Level_Front_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="2.05861193e-45 6.63257745e-75 -3.06916196e-30" />
+      <geometry>
+        <mesh filename="meshes/0051_Second_Level_Front_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Second_Level_Left_v1_1">
+    <inertial>
+      <origin xyz="0.129910538 0.12473896 0.101580898" rpy="0 0 0" />
+      <mass value="3.06021828107" />
+      <inertia ixx="0.0272288870971" iyy="0.0265267698495" izz="0.0267281421978" ixy="0.0120615834725" iyz="-0.00215895976683" ixz="0.00124775957906" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-6.40373762e-60 6.12359874e-165 -2.4492936e-16" />
+      <geometry>
+        <mesh filename="meshes/0052_Second_Level_Left_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-6.40373762e-60 6.12359874e-165 -2.4492936e-16" />
+      <geometry>
+        <mesh filename="meshes/0052_Second_Level_Left_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Second_Level_Right_v1_1">
+    <inertial>
+      <origin xyz="-0.12485396 -0.12961 0.101802533" rpy="0 0 0" />
+      <mass value="3.08935142358" />
+      <inertia ixx="0.0270401402165" iyy="0.0276721252331" izz="0.0270964991675" ixy="0.012237484601" iyz="-0.00122220983859" ixz="0.0021226212764" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.49880108e-15 -2.22044605e-16 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0053_Second_Level_Right_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.49880108e-15 -2.22044605e-16 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0053_Second_Level_Right_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Second_Level_Hinge_Wall_Lower_v1_1">
+    <inertial>
+      <origin xyz="-0.112086826 0.112790291 0.0454094712" rpy="0 0 0" />
+      <mass value="1.99482605896" />
+      <inertia ixx="0.0161182699898" iyy="0.0160929014309" izz="0.0272054825233" ixy="-0.0130237738587" iyz="0.000310426399972" ixz="-0.000329519956727" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.38084354e-15 -2.30751765e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0054_Second_Level_Hinge_Wall_Lower_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.38084354e-15 -2.30751765e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0054_Second_Level_Hinge_Wall_Lower_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Second_Level_Hinge_Wall_Upper_v1_1">
+    <inertial>
+      <origin xyz="-0.11219088 0.113004123 0.169529129" rpy="0 0 0" />
+      <mass value="1.9183729292" />
+      <inertia ixx="0.0149276733797" iyy="0.0148985766236" izz="0.0258607001097" ixy="-0.0123567737305" iyz="-0.000268139132206" ixz="0.000288939973669" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="5.38831724e-16 -1.59513367e-15 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0055_Second_Level_Hinge_Wall_Upper_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="5.38831724e-16 -1.59513367e-15 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0055_Second_Level_Hinge_Wall_Upper_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Door_Assembly_v1_3">
+    <inertial>
+      <origin xyz="-0.145387285 0.139794869 2.91789625e-07" rpy="0 0 0" />
+      <mass value="2.97965510301" />
+      <inertia ixx="0.0113263384648" iyy="0.0117603902236" izz="0.0103784565168" ixy="-0.0047469321914" iyz="1.82231003093e-07" ixz="-1.50224610196e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.66964085e-15 -2.27661525e-15 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0056_Door_Assembly_v1_3_Hinge_Door_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.66964085e-15 -2.27661525e-15 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0056_Door_Assembly_v1_3_Hinge_Door_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-6.28036983e-18 -3.14018492e-17 5.55111512e-17" rpy="-3.14159265 -2.85374578e-15 3.10057742" />
+      <geometry>
+        <mesh filename="meshes/0057_Door_Assembly_v1_3_Door_Handle_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-6.28036983e-18 -3.14018492e-17 5.55111512e-17" rpy="-3.14159265 -2.85374578e-15 3.10057742" />
+      <geometry>
+        <mesh filename="meshes/0057_Door_Assembly_v1_3_Door_Handle_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Circle_Accessory_Base_v1_1">
+    <inertial>
+      <origin xyz="0.14479386 0.144794192 2.06786999e-07" rpy="0 0 0" />
+      <mass value="0.677229306487" />
+      <inertia ixx="0.00173677415702" iyy="0.00173677631173" izz="0.00119043715779" ixy="0.000582056555919" iyz="-1.43002079622e-09" ixz="2.74434690944e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="4.44286462e-27 1.79994501e-21 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0059_Circle_Accessory_Base_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="4.44286462e-27 1.79994501e-21 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0059_Circle_Accessory_Base_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Circle_Accessory_Base_v1_2">
+    <inertial>
+      <origin xyz="-0.14479386 -0.144794192 2.06786999e-07" rpy="0 0 0" />
+      <mass value="0.677229306487" />
+      <inertia ixx="0.00173677415702" iyy="0.00173677631173" izz="0.00119043715779" ixy="0.000582056555919" iyz="1.43002080316e-09" ixz="-2.74434690944e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.57009246e-16 1.5701094e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0060_Circle_Accessory_Base_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.57009246e-16 1.5701094e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0060_Circle_Accessory_Base_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Level_3_Back_Plate_v1_1">
+    <inertial>
+      <origin xyz="-0.130846945 0.174432731 -0.425986762" rpy="0 0 0" />
+      <mass value="1.90988772987" />
+      <inertia ixx="0.00568319997849" iyy="0.00568319997849" izz="0.0113341938817" ixy="-0.00392391090609" iyz="4.40610568503e-07" ixz="-4.40610568503e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0307071068 0.0742928932 -0.42" rpy="-1.57079633 -2.97206826e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0061_Level_3_Back_Plate_v1_1_SecondLevel_1_MidTopPlate_1_MidTopBackPlate_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0307071068 0.0742928932 -0.42" rpy="-1.57079633 -2.97206826e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0061_Level_3_Back_Plate_v1_1_SecondLevel_1_MidTopPlate_1_MidTopBackPlate_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Level_3_Left_Plate_v1_1">
+    <inertial>
+      <origin xyz="0.0975364602 0.121415469 0.00501437595" rpy="0 0 0" />
+      <mass value="1.46321195815" />
+      <inertia ixx="0.00302248987781" iyy="0.00478116632839" izz="0.00777904158377" ixy="0.00276918435702" iyz="2.07213580322e-07" ixz="-1.989146131e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159265 1.38777878e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0065_Level_3_Left_Plate_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159265 1.38777878e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0065_Level_3_Left_Plate_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Level_3_Right_Plate_v1_1">
+    <inertial>
+      <origin xyz="-0.121415469 -0.0975364602 0.00501437595" rpy="0 0 0" />
+      <mass value="1.46321195815" />
+      <inertia ixx="0.00478116632839" iyy="0.00302248987781" izz="0.00777904158377" ixy="0.00276918435702" iyz="1.98914613128e-07" ixz="-2.07213580294e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.72538608e-16 -3.46944695e-18 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0066_Level_3_Right_Plate_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.72538608e-16 -3.46944695e-18 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0066_Level_3_Right_Plate_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Level_3_Front_Plate_v1_1">
+    <inertial>
+      <origin xyz="0.115611359 -0.115629762 0.00500797386" rpy="0 0 0" />
+      <mass value="1.20604519263" />
+      <inertia ixx="0.00264635972958" iyy="0.00264705313727" izz="0.00527319808811" ixy="-0.00213700294377" iyz="-2.12289220369e-08" ixz="2.1051939525e-08" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.81792008e-17 -6.24500451e-17 -3.05683601e-30" />
+      <geometry>
+        <mesh filename="meshes/0067_Level_3_Front_Plate_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.81792008e-17 -6.24500451e-17 -3.05683601e-30" />
+      <geometry>
+        <mesh filename="meshes/0067_Level_3_Front_Plate_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_Driver_Holder_v1_1">
+    <inertial>
+      <origin xyz="-4.58989121e-05 -4.58989121e-05 0.0291737017" rpy="0 0 0" />
+      <mass value="0.419817694553" />
+      <inertia ixx="0.000219770115226" iyy="0.000219770115226" izz="0.000181825195045" ixy="2.11072324003e-05" iyz="6.13266524944e-07" ixz="6.13266524979e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.34723683e-16 -2.10811354e-16 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0068_Motor_Driver_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.34723683e-16 -2.10811354e-16 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0068_Motor_Driver_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_Driver_Holder_v1_2">
+    <inertial>
+      <origin xyz="4.58989121e-05 4.58989121e-05 0.0291737017" rpy="0 0 0" />
+      <mass value="0.419817694553" />
+      <inertia ixx="0.000219770115226" iyy="0.000219770115226" izz="0.000181825195045" ixy="2.11072324003e-05" iyz="-6.13266524944e-07" ixz="-6.13266524983e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.32318968e-17 -6.28557738e-17 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0069_Motor_Driver_Holder_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.32318968e-17 -6.28557738e-17 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0069_Motor_Driver_Holder_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Raspberry_Pi_Holder_v1_1">
+    <inertial>
+      <origin xyz="-0.0141096064 0.0125951463 -0.0190353971" rpy="0 0 0" />
+      <mass value="0.673072815585" />
+      <inertia ixx="0.00115893863354" iyy="0.00117292776856" izz="0.00107025988614" ixy="-0.000407216480633" iyz="-2.11437716949e-05" ixz="-6.01806562308e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.57079633 -3.19495607e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0070_Raspberry_Pi_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.57079633 -3.19495607e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0070_Raspberry_Pi_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Raspberry_Pi_Holder_Lid_v1_1">
+    <inertial>
+      <origin xyz="-0.0100725173 -0.00831157039 -0.000120456423" rpy="0 0 0" />
+      <mass value="0.10205816969" />
+      <inertia ixx="6.52810866456e-05" iyy="6.52814892849e-05" izz="4.57799679024e-05" ixy="-2.283710311e-05" iyz="-2.99455852557e-07" ixz="-2.99181003353e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.57079633 -2.77555756e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0071_Raspberry_Pi_Holder_Lid_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.57079633 -2.77555756e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0071_Raspberry_Pi_Holder_Lid_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Pot_Holder_v1_1">
+    <inertial>
+      <origin xyz="0.00963338022 -0.0323160029 -0.0137167887" rpy="0 0 0" />
+      <mass value="0.238343450926" />
+      <inertia ixx="0.000131927880198" iyy="7.19830046501e-05" izz="0.000144917834383" ixy="3.90257720553e-05" iyz="-3.08919388984e-05" ixz="2.04662253127e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.57079633 -1.65712239e-16 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0072_Pot_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.57079633 -1.65712239e-16 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0072_Pot_Holder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Potentiometer_v1_1">
+    <inertial>
+      <origin xyz="-0.008117293 -0.008117293 -9.66222798e-05" rpy="0 0 0" />
+      <mass value="0.0665749314319" />
+      <inertia ixx="5.0280518272e-06" iyy="5.02805182713e-06" izz="6.17729564667e-06" ixy="-1.2064643399e-06" iyz="1.20081814598e-08" ixz="1.200818146e-08" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.57079633 -2.22044605e-16 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0073_Potentiometer_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.57079633 -2.22044605e-16 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0073_Potentiometer_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Pot_Gear_v1_1">
+    <inertial>
+      <origin xyz="-0.00537376968 -0.00537376968 2.77555756e-16" rpy="0 0 0" />
+      <mass value="0.0324293551653" />
+      <inertia ixx="1.67201873675e-06" iyy="1.67201873675e-06" izz="1.52773144032e-06" ixy="1.44287296432e-07" iyz="0" ixz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.57079633 3.88578059e-16 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0074_Pot_Gear_v1_1_Component2_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.57079633 3.88578059e-16 -0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0074_Pot_Gear_v1_1_Component2_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Anti_Deflection_Shaft_v1_1">
+    <inertial>
+      <origin xyz="-0.00814566971 0.00814566971 -0.116205763" rpy="0 0 0" />
+      <mass value="7.73326934382" />
+      <inertia ixx="0.0516790119437" iyy="0.0516790119437" izz="0.0195204085773" ixy="-0.00495702760561" iyz="-4.60519070079e-06" ixz="4.60519070072e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="2.91740031e-16 -4.2578072e-16 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0076_Anti_Deflection_Shaft_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="2.91740031e-16 -4.2578072e-16 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0076_Anti_Deflection_Shaft_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="2.91740031e-16 -4.2578072e-16 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0076_Anti_Deflection_Shaft_v1_1_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="2.91740031e-16 -4.2578072e-16 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0076_Anti_Deflection_Shaft_v1_1_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="2.91740031e-16 -4.2578072e-16 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0076_Anti_Deflection_Shaft_v1_1_body002.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="2.91740031e-16 -4.2578072e-16 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0076_Anti_Deflection_Shaft_v1_1_body002.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Third_Level_Front_Wall_v1_1">
+    <inertial>
+      <origin xyz="0.132978089 -0.132978258 0.115050162" rpy="0 0 0" />
+      <mass value="2.69288546496" />
+      <inertia ixx="0.0218636022932" iyy="0.0218636360462" izz="0.0166306591533" ixy="-0.00776083486147" iyz="0.000172371881619" ixz="-0.000172319171433" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-8.05683991e-16 4.51446307e-16 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0077_Third_Level_Front_Wall_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-8.05683991e-16 4.51446307e-16 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0077_Third_Level_Front_Wall_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Third_Level_Left_Wall_v1_1">
+    <inertial>
+      <origin xyz="0.11993637 0.139939144 -0.00202742884" rpy="0 0 0" />
+      <mass value="2.69736748387" />
+      <inertia ixx="0.0209708447401" iyy="0.0233221899979" izz="0.019832046508" ixy="0.00898524298132" iyz="-0.000352465142094" ixz="0.000249596161927" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.34333304e-17 4.02935504e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0078_Third_Level_Left_Wall_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.34333304e-17 4.02935504e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0078_Third_Level_Left_Wall_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Third_Level_Right_Wall_v1_1">
+    <inertial>
+      <origin xyz="-0.139943609 -0.119794753 -0.00221165237" rpy="0 0 0" />
+      <mass value="2.70272485287" />
+      <inertia ixx="0.0234463038443" iyy="0.0210442517194" izz="0.0199371835925" ixy="0.00902565272742" iyz="-0.000214210426453" ixz="0.000351428506278" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.20309881e-16 -6.30330903e-17 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0079_Third_Level_Right_Wall_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.20309881e-16 -6.30330903e-17 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0079_Third_Level_Right_Wall_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Third_Level_Hinge_Wall_Lower_v1_1">
+    <inertial>
+      <origin xyz="-0.112086826 0.112790291 0.0454094712" rpy="0 0 0" />
+      <mass value="1.99482605896" />
+      <inertia ixx="0.0161182699898" iyy="0.0160929014309" izz="0.0272054825233" ixy="-0.0130237738587" iyz="0.000310426399972" ixz="-0.000329519956727" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="3.13315124e-16 -5.94413653e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0080_Third_Level_Hinge_Wall_Lower_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.13315124e-16 -5.94413653e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0080_Third_Level_Hinge_Wall_Lower_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Third_Level_Hinge_Wall_Upper_v1_1">
+    <inertial>
+      <origin xyz="-0.112182255 0.112994523 0.169574727" rpy="0 0 0" />
+      <mass value="1.9206766402" />
+      <inertia ixx="0.0149442358495" iyy="0.0149151106601" izz="0.025887124346" ixy="-0.0123695996698" iyz="-0.000267438981057" ixz="0.000288310959998" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-8.82123869e-16 -1.68340828e-15 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0081_Third_Level_Hinge_Wall_Upper_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-8.82123869e-16 -1.68340828e-15 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0081_Third_Level_Hinge_Wall_Upper_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Door_Assembly_v1_4">
+    <inertial>
+      <origin xyz="-0.145387285 0.139794869 2.91789625e-07" rpy="0 0 0" />
+      <mass value="2.97965510301" />
+      <inertia ixx="0.0113263384648" iyy="0.0117603902236" izz="0.0103784565168" ixy="-0.0047469321914" iyz="1.82231003093e-07" ixz="-1.50224610196e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.03079936e-15 -2.29528036e-15 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0082_Door_Assembly_v1_4_Hinge_Door_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.03079936e-15 -2.29528036e-15 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0082_Door_Assembly_v1_4_Hinge_Door_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-6.28036983e-18 -3.14018492e-17 1.11022302e-16" rpy="-3.14159265 -3.13202602e-15 3.10057742" />
+      <geometry>
+        <mesh filename="meshes/0083_Door_Assembly_v1_4_Door_Handle_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-6.28036983e-18 -3.14018492e-17 1.11022302e-16" rpy="-3.14159265 -3.13202602e-15 3.10057742" />
+      <geometry>
+        <mesh filename="meshes/0083_Door_Assembly_v1_4_Door_Handle_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Rectangle_Design_v1_1">
+    <inertial>
+      <origin xyz="0.00193564886 -0.0019356232 0" rpy="0 0 0" />
+      <mass value="0.0760229189961" />
+      <inertia ixx="4.60078096612e-05" iyy="4.6007798659e-05" izz="2.65587357543e-06" ixy="-1.10923346956e-06" iyz="1.73472347598e-18" ixz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-8.88925358e-16 -3.72948549e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0085_Rectangle_Design_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-8.88925358e-16 -3.72948549e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0085_Rectangle_Design_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Rectangle_Design_v1_2">
+    <inertial>
+      <origin xyz="0.00115689282 -0.00248092174 0" rpy="0 0 0" />
+      <mass value="0.0760229189961" />
+      <inertia ixx="4.52948068437e-05" iyy="4.67208014765e-05" izz="2.65587357543e-06" ixy="-8.49725671516e-07" iyz="-1.73472347598e-18" ixz="8.67361737988e-19" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-7.49646071e-16 -6.61872901e-16 -2.70526034" />
+      <geometry>
+        <mesh filename="meshes/0086_Rectangle_Design_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-7.49646071e-16 -6.61872901e-16 -2.70526034" />
+      <geometry>
+        <mesh filename="meshes/0086_Rectangle_Design_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Rectangle_Design_v1_3">
+    <inertial>
+      <origin xyz="0.00248093707 -0.00115685994 0" rpy="0 0 0" />
+      <mass value="0.0760229189961" />
+      <inertia ixx="4.67208099046e-05" iyy="4.52947984155e-05" izz="2.65587357543e-06" ixy="-8.49718599444e-07" iyz="0" ixz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-9.20987128e-16 -5.38121446e-17 -2.00712864" />
+      <geometry>
+        <mesh filename="meshes/0087_Rectangle_Design_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-9.20987128e-16 -5.38121446e-17 -2.00712864" />
+      <geometry>
+        <mesh filename="meshes/0087_Rectangle_Design_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Breastplate_v1_1">
+    <inertial>
+      <origin xyz="0.00734462361 -0.0251224261 -0.0110394712" rpy="0 0 0" />
+      <mass value="0.173622183669" />
+      <inertia ixx="0.000132835733925" iyy="0.00013283584977" izz="0.000113753363329" ixy="-5.6526909078e-05" iyz="-2.81907026368e-09" ixz="-5.55277534717e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.57079633 -3.33066907e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0088_Breastplate_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.57079633 -3.33066907e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0088_Breastplate_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Circle_Accessory_Base_v1_3">
+    <inertial>
+      <origin xyz="0.14479386 0.144794192 2.06786999e-07" rpy="0 0 0" />
+      <mass value="0.677229306487" />
+      <inertia ixx="0.00173677415702" iyy="0.00173677631173" izz="0.00119043715779" ixy="0.000582056555919" iyz="-1.43002081704e-09" ixz="2.74434690944e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.81075442e-17 2.60751945e-17 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0089_Circle_Accessory_Base_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.81075442e-17 2.60751945e-17 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0089_Circle_Accessory_Base_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Handle_v1_1">
+    <inertial>
+      <origin xyz="0.154273284 0.1542709 -0.00655680217" rpy="0 0 0" />
+      <mass value="1.17436271808" />
+      <inertia ixx="0.00118300686449" iyy="0.00118298713739" izz="0.00135111598834" ixy="0.00061654842266" iyz="4.94590437431e-05" ixz="4.93964245134e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.81075806e-17 2.75122827e-17 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0090_Handle_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.81075806e-17 2.75122827e-17 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0090_Handle_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Circle_Accessory_Base_v1_4">
+    <inertial>
+      <origin xyz="-0.14479386 -0.144794192 2.06786999e-07" rpy="0 0 0" />
+      <mass value="0.677229306487" />
+      <inertia ixx="0.00173677415702" iyy="0.00173677631173" izz="0.00119043715779" ixy="0.000582056555919" iyz="1.43002081704e-09" ixz="-2.74434690251e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.01580371e-16 4.94065124e-17 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0091_Circle_Accessory_Base_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.01580371e-16 4.94065124e-17 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0091_Circle_Accessory_Base_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Handle_v1_2">
+    <inertial>
+      <origin xyz="-0.154273284 -0.1542709 -0.00655680217" rpy="0 0 0" />
+      <mass value="1.17436271808" />
+      <inertia ixx="0.00118300686449" iyy="0.00118298713739" izz="0.00135111598834" ixy="0.00061654842266" iyz="-4.94590437431e-05" ixz="-4.93964245134e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.01580376e-16 -5.81966553e-17 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0092_Handle_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.01580376e-16 -5.81966553e-17 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0092_Handle_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Linear_Actuator_Assembly_v1_1">
+    <inertial>
+      <origin xyz="0.0311585768 -0.0311611945 -0.141695048" rpy="0 0 0" />
+      <mass value="9.47162348039" />
+      <inertia ixx="0.103068367429" iyy="0.10306992535" izz="0.0649170009507" ixy="-0.00778720935421" iyz="0.00452728548706" ixz="-0.0045240284874" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.00176776695 0.00176776695 -0.3645" rpy="5.71755906e-17 -2.9420015e-17 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0093_Linear_Actuator_Assembly_v1_1_Key_Fitting_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.00176776695 0.00176776695 -0.3645" rpy="5.71755906e-17 -2.9420015e-17 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0093_Linear_Actuator_Assembly_v1_1_Key_Fitting_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.0420077038 -0.0649886741 -0.346784922" rpy="2.35619449 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0094_Linear_Actuator_Assembly_v1_1_Rack_v1_1_Component1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0420077038 -0.0649886741 -0.346784922" rpy="2.35619449 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0094_Linear_Actuator_Assembly_v1_1_Rack_v1_1_Component1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.0300520382 -2.49709379e-15 -0.06575" rpy="-5.55111339e-17 -1.01879439e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0096_Linear_Actuator_Assembly_v1_1_Top_Brace_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0300520382 -2.49709379e-15 -0.06575" rpy="-5.55111339e-17 -1.01879439e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0096_Linear_Actuator_Assembly_v1_1_Top_Brace_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="1.38607116e-15 -0.0300520382 -0.06575" rpy="-9.24095899e-17 2.77555756e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0097_Linear_Actuator_Assembly_v1_1_Top_Brace_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.38607116e-15 -0.0300520382 -0.06575" rpy="-9.24095899e-17 2.77555756e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0097_Linear_Actuator_Assembly_v1_1_Top_Brace_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="1.36015873e-15 -0.0350520382 -0.26825" rpy="-5.55111512e-17 4.63682881e-17 1.80252737e-15" />
+      <geometry>
+        <mesh filename="meshes/0098_Linear_Actuator_Assembly_v1_1_Hypotenuse_Brace_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.36015873e-15 -0.0350520382 -0.26825" rpy="-5.55111512e-17 4.63682881e-17 1.80252737e-15" />
+      <geometry>
+        <mesh filename="meshes/0098_Linear_Actuator_Assembly_v1_1_Hypotenuse_Brace_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.0350520382 -3.1737037e-15 -0.26825" rpy="4.63682881e-17 -5.55111512e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0099_Linear_Actuator_Assembly_v1_1_Hypotenuse_Brace_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0350520382 -3.1737037e-15 -0.26825" rpy="4.63682881e-17 -5.55111512e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0099_Linear_Actuator_Assembly_v1_1_Hypotenuse_Brace_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Dome_Plate_Rear_v1_1">
+    <inertial>
+      <origin xyz="-0.101239209 0.101239206 0.00560987475" rpy="0 0 0" />
+      <mass value="2.00899735856" />
+      <inertia ixx="0.00617257395072" iyy="0.00617257397786" izz="0.0122886063813" ixy="-0.00428799689429" iyz="-3.24034257217e-05" ixz="3.24034757574e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.47941716e-15 -1.28382308e-15 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0101_Dome_Plate_Rear_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.47941716e-15 -1.28382308e-15 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0101_Dome_Plate_Rear_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Dome_Plate_Left_v1_1">
+    <inertial>
+      <origin xyz="0.0895266148 0.133110088 0.0159212458" rpy="0 0 0" />
+      <mass value="1.23391374293" />
+      <inertia ixx="0.00241471043921" iyy="0.00476714811197" izz="0.00714060499094" ixy="0.00231095235039" iyz="-4.1120563186e-06" ixz="-3.69705310091e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159265 1.19944946e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0102_Dome_Plate_Left_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159265 1.19944946e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0102_Dome_Plate_Left_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Dome_Plate_Right_v1_1">
+    <inertial>
+      <origin xyz="-0.133110088 -0.0895266148 -0.00407875423" rpy="0 0 0" />
+      <mass value="1.23391374293" />
+      <inertia ixx="0.00476714811197" iyy="0.00241471043921" izz="0.00714060499094" ixy="0.00231095235039" iyz="3.69705310091e-05" ixz="4.11205631862e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.13907037e-16 -1.26066181e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0103_Dome_Plate_Right_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.13907037e-16 -1.26066181e-16 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0103_Dome_Plate_Right_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Dome_Front_v1_1">
+    <inertial>
+      <origin xyz="0.116185571 -0.116186378 0.0701158635" rpy="0 0 0" />
+      <mass value="1.90249934085" />
+      <inertia ixx="0.0126278766921" iyy="0.0126279841412" izz="0.0123536569229" ixy="-0.00445165672648" iyz="-0.0020268446079" ixz="0.00202679234182" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.38603675e-17 -4.91193705e-18 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0104_Dome_Front_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.38603675e-17 -4.91193705e-18 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0104_Dome_Front_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Dome_Left_v1_1">
+    <inertial>
+      <origin xyz="0.113429371 0.118588964 0.0721867265" rpy="0 0 0" />
+      <mass value="2.35357691658" />
+      <inertia ixx="0.0148904976924" iyy="0.015112119844" izz="0.0148787874308" ixy="0.00564570207018" iyz="0.00243495500857" ixz="0.00173438127749" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-6.91807141e-17 5.55111512e-17 -2.22044605e-16" />
+      <geometry>
+        <mesh filename="meshes/0105_Dome_Left_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-6.91807141e-17 5.55111512e-17 -2.22044605e-16" />
+      <geometry>
+        <mesh filename="meshes/0105_Dome_Left_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Dome_Right_v1_1">
+    <inertial>
+      <origin xyz="-0.118588722 -0.113429662 0.0721867287" rpy="0 0 0" />
+      <mass value="2.35357552542" />
+      <inertia ixx="0.0151120410153" iyy="0.0148905789212" izz="0.0148787976195" ixy="0.00564570674531" iyz="-0.0017343824061" ixz="-0.00243495306904" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.32999901e-16 -3.41303491e-16 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0106_Dome_Right_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.32999901e-16 -3.41303491e-16 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0106_Dome_Right_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Dome_Back_v1_1">
+    <inertial>
+      <origin xyz="-0.109260435 0.11690206 0.057734325" rpy="0 0 0" />
+      <mass value="1.45551974771" />
+      <inertia ixx="0.0121455974547" iyy="0.0122964592843" izz="0.013273529707" ixy="-0.00508442442297" iyz="0.00152500311683" ixz="-0.00199396179659" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="9.619618e-16 -3.01997931e-15 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0107_Dome_Back_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="9.619618e-16 -3.01997931e-15 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0107_Dome_Back_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Dome_Top_v1_1">
+    <inertial>
+      <origin xyz="1.60091995e-08 -6.37149225e-08 0.181027179" rpy="0 0 0" />
+      <mass value="2.40939746801" />
+      <inertia ixx="0.0107019989267" iyy="0.0107019956727" izz="0.0205137222616" ixy="-1.53081835125e-09" iyz="-3.48448673063e-09" ixz="8.68952623721e-10" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.49501132e-16 -1.38415263e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0108_Dome_Top_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.49501132e-16 -1.38415263e-16 -2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0108_Dome_Top_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Eye_Platform_v1_1">
+    <inertial>
+      <origin xyz="-0.0107724786 0.0107730052 0.00546268597" rpy="0 0 0" />
+      <mass value="0.803832538713" />
+      <inertia ixx="0.00118492271419" iyy="0.00118491973179" izz="0.0018235230261" ixy="-0.000749924821217" iyz="-5.8857277493e-05" ixz="5.8854129383e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="2.67971273e-17 -1.81904631e-15 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0109_Eye_Platform_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="2.67971273e-17 -1.81904631e-15 0.785398163" />
+      <geometry>
+        <mesh filename="meshes/0109_Eye_Platform_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="LCD_Pocket_v1_1">
+    <inertial>
+      <origin xyz="0.00343568429 -0.00344484127 -0.0199071191" rpy="0 0 0" />
+      <mass value="2.23111607087" />
+      <inertia ixx="0.0155170031332" iyy="0.015517091268" izz="0.0211387058775" ixy="-0.00751471013432" iyz="0.00191810063667" ixz="-0.0019178187507" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-9.67725291e-16 0.261799388 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0110_LCD_Pocket_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-9.67725291e-16 0.261799388 2.35619449" />
+      <geometry>
+        <mesh filename="meshes/0110_LCD_Pocket_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Base_v1_1">
+    <inertial>
+      <origin xyz="0.00193950116 -2.55090927e-11 -0.000708120032" rpy="0 0 0" />
+      <mass value="0.350631260559" />
+      <inertia ixx="0.000202100760348" iyy="0.000118221075973" izz="0.000129335678661" ixy="6.97805562519e-14" iyz="2.63602141959e-13" ixz="1.93161578899e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.01879439e-16 -1.16743491e-16 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0111_Base_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.01879439e-16 -1.16743491e-16 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0111_Base_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Feetech_Servo_Motor_v1_1">
+    <inertial>
+      <origin xyz="-0.000217138704 -1.66673045e-15 -0.000132301461" rpy="0 0 0" />
+      <mass value="0.276778822277" />
+      <inertia ixx="3.80498740513e-05" iyy="7.11881124219e-05" izz="5.97197017514e-05" ixy="1.12460564407e-17" iyz="7.11846488873e-18" ixz="1.1812018897e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0125 -1.9767174e-15 -0.01825" rpy="-3.14159265 -1.16743491e-16 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0112_Feetech_Servo_Motor_v1_1_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0125 -1.9767174e-15 -0.01825" rpy="-3.14159265 -1.16743491e-16 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0112_Feetech_Servo_Motor_v1_1_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.0125 -1.98106776e-15 0.01825" rpy="2.43339012e-17 -1.16743491e-16 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0113_Feetech_Servo_Motor_v1_1_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0125 -1.98106776e-15 0.01825" rpy="2.43339012e-17 -1.16743491e-16 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0113_Feetech_Servo_Motor_v1_1_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.57079633 -1.16743491e-16 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0114_Feetech_Servo_Motor_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.57079633 -1.16743491e-16 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0114_Feetech_Servo_Motor_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_1_Support_v1_1">
+    <inertial>
+      <origin xyz="0.0372481764 -2.58130582e-08 -0.000172555938" rpy="0 0 0" />
+      <mass value="0.515484380967" />
+      <inertia ixx="0.000234200296079" iyy="0.000198574960129" izz="0.000298606321485" ixy="-2.2786836424e-10" iyz="-1.31600242178e-12" ixz="-1.24145704689e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.01879439e-16 -3.12862409e-17 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0115_Motor_1_Support_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.01879439e-16 -3.12862409e-17 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0115_Motor_1_Support_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Shoulder_v1_1">
+    <inertial>
+      <origin xyz="0.0434463768 0.00347232531 -7.15063818e-06" rpy="0 0 0" />
+      <mass value="0.911762037294" />
+      <inertia ixx="0.000805180482554" iyy="0.00108495849457" izz="0.000631100679691" ixy="-0.000109379750021" iyz="-5.52904096522e-08" ixz="6.49153653054e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0.07011 0.01875 0" rpy="1.2249273e-16 -1.29900973e-16 -1.58084316e-13" />
+      <geometry>
+        <mesh filename="meshes/0116_Shoulder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.07011 0.01875 0" rpy="1.2249273e-16 -1.29900973e-16 -1.58084316e-13" />
+      <geometry>
+        <mesh filename="meshes/0116_Shoulder_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Feetech_Servo_Motor_v1_2">
+    <inertial>
+      <origin xyz="-0.000217138704 0.000132301461 -1.66533454e-15" rpy="0 0 0" />
+      <mass value="0.276778822277" />
+      <inertia ixx="3.80498740513e-05" iyy="5.97197017514e-05" izz="7.11881124219e-05" ixy="-1.18120188977e-07" iyz="-8.99887803163e-18" ixz="1.38777878078e-17" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0125 0.01825 2.88657986e-15" rpy="-1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0117_Feetech_Servo_Motor_v1_2_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0125 0.01825 2.88657986e-15" rpy="-1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0117_Feetech_Servo_Motor_v1_2_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.0125 -0.01825 -2.88657986e-15" rpy="1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0118_Feetech_Servo_Motor_v1_2_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0125 -0.01825 -2.88657986e-15" rpy="1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0118_Feetech_Servo_Motor_v1_2_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159265 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0119_Feetech_Servo_Motor_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159265 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0119_Feetech_Servo_Motor_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_2_Support_v1_1">
+    <inertial>
+      <origin xyz="0.0113775738 0.000163353268 0" rpy="0 0 0" />
+      <mass value="0.852172395555" />
+      <inertia ixx="0.00053488366295" iyy="0.000613344101818" izz="0.00027869484336" ixy="1.90063236039e-06" iyz="4.33680868994e-19" ixz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.22464062e-16 -1.29900973e-16 -1.59082557e-32" />
+      <geometry>
+        <mesh filename="meshes/0120_Motor_2_Support_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.22464062e-16 -1.29900973e-16 -1.59082557e-32" />
+      <geometry>
+        <mesh filename="meshes/0120_Motor_2_Support_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Bicep_Left_v1_1">
+    <inertial>
+      <origin xyz="0.012892018 0.0102810109 9.40535356e-05" rpy="0 0 0" />
+      <mass value="0.384856570856" />
+      <inertia ixx="0.000161661472558" iyy="0.000524899013257" izz="0.000380941493602" ixy="1.52624689694e-05" iyz="1.24693390295e-07" ixz="-1.97329907964e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="1.83186799e-15 0.01175 0" rpy="1.57079633 -1.29900973e-16 -1.58861472e-13" />
+      <geometry>
+        <mesh filename="meshes/0121_Bicep_Left_v1_1_Component1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.83186799e-15 0.01175 0" rpy="1.57079633 -1.29900973e-16 -1.58861472e-13" />
+      <geometry>
+        <mesh filename="meshes/0121_Bicep_Left_v1_1_Component1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Bicep_Right_v1_1">
+    <inertial>
+      <origin xyz="0.0790600702 -0.0484251444 1.52503633e-08" rpy="0 0 0" />
+      <mass value="0.981415377094" />
+      <inertia ixx="0.000737945715733" iyy="0.00147012011868" izz="0.00208410618895" ixy="-0.000464500627686" iyz="2.21779277408e-09" ixz="3.69947816825e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.57079633 -1.29900973e-16 -1.58861472e-13" />
+      <geometry>
+        <mesh filename="meshes/0123_Bicep_Right_v1_1_Component1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.57079633 -1.29900973e-16 -1.58861472e-13" />
+      <geometry>
+        <mesh filename="meshes/0123_Bicep_Right_v1_1_Component1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Feetech_Servo_Motor_v1_3">
+    <inertial>
+      <origin xyz="-0.000217138704 0.000132301461 -1.66533454e-15" rpy="0 0 0" />
+      <mass value="0.276778822277" />
+      <inertia ixx="3.80498740513e-05" iyy="5.97197017514e-05" izz="7.11881124219e-05" ixy="-1.18120188977e-07" iyz="-8.96160858195e-18" ixz="1.38777878078e-17" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0125 0.01825 2.99760217e-15" rpy="-1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0125_Feetech_Servo_Motor_v1_3_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0125 0.01825 2.99760217e-15" rpy="-1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0125_Feetech_Servo_Motor_v1_3_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.0125 -0.01825 -2.88657986e-15" rpy="1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0126_Feetech_Servo_Motor_v1_3_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0125 -0.01825 -2.88657986e-15" rpy="1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0126_Feetech_Servo_Motor_v1_3_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159265 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0127_Feetech_Servo_Motor_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159265 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0127_Feetech_Servo_Motor_v1_3_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_3_support_v1_1">
+    <inertial>
+      <origin xyz="0.00651765801 0.000486224659 -0.0125250027" rpy="0 0 0" />
+      <mass value="0.0940349620205" />
+      <inertia ixx="2.70900549463e-05" iyy="4.22459127154e-05" izz="3.88339157047e-05" ixy="-1.88179362556e-07" iyz="1.95886517524e-12" ixz="3.75910413908e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0128_Motor_3_support_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0128_Motor_3_support_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Forearm_v1_1">
+    <inertial>
+      <origin xyz="0.0742015879 0.00333472187 9.69844949e-08" rpy="0 0 0" />
+      <mass value="0.985619003143" />
+      <inertia ixx="0.000632690976033" iyy="0.00178437457478" izz="0.00231524955638" ixy="0.0001096592704" iyz="3.24656244596e-09" ixz="5.87809739772e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0.121475 1.95427442e-16 0" rpy="1.57079633 1.58959659e-13 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0129_Forearm_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.121475 1.95427442e-16 0" rpy="1.57079633 1.58959659e-13 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0129_Forearm_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Feetech_Servo_Motor_v1_4">
+    <inertial>
+      <origin xyz="-0.000217138704 0.000132301461 -1.77635684e-15" rpy="0 0 0" />
+      <mass value="0.276778822277" />
+      <inertia ixx="3.80498740513e-05" iyy="5.97197017514e-05" izz="7.11881124218e-05" ixy="-1.18120188981e-07" iyz="-8.99210176805e-18" ixz="2.77555756156e-17" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0125 0.01825 2.99760217e-15" rpy="-1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0130_Feetech_Servo_Motor_v1_4_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0125 0.01825 2.99760217e-15" rpy="-1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0130_Feetech_Servo_Motor_v1_4_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.0125 -0.01825 -2.88657986e-15" rpy="1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0131_Feetech_Servo_Motor_v1_4_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0125 -0.01825 -2.88657986e-15" rpy="1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0131_Feetech_Servo_Motor_v1_4_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159265 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0132_Feetech_Servo_Motor_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159265 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0132_Feetech_Servo_Motor_v1_4_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_4_support_v1_1">
+    <inertial>
+      <origin xyz="0.0335493649 0.000203310878 -0.0102252723" rpy="0 0 0" />
+      <mass value="0.12648512497" />
+      <inertia ixx="3.71295677851e-05" iyy="6.1434410579e-05" izz="5.03751904178e-05" ixy="-1.11443676071e-07" iyz="-9.45467721787e-14" ixz="-8.07687250415e-14" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0.28099801 1.58983937e-13 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0133_Motor_4_support_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0.28099801 1.58983937e-13 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0133_Motor_4_support_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wrist_v1_1">
+    <inertial>
+      <origin xyz="0.0325480561 -0.00172064746 3.32130809e-05" rpy="0 0 0" />
+      <mass value="0.462775566962" />
+      <inertia ixx="0.000364406922792" iyy="0.000192037555046" izz="0.000446629155864" ixy="3.53565602801e-05" iyz="-4.20617539926e-07" ixz="-5.65042072853e-08" />
+    </inertial>
+    <visual>
+      <origin xyz="1.77635684e-15 0 -2.22044605e-16" rpy="1.59003484e-13 -3.13557154e-16 1.38777878e-16" />
+      <geometry>
+        <mesh filename="meshes/0134_Wrist_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="1.77635684e-15 0 -2.22044605e-16" rpy="1.59003484e-13 -3.13557154e-16 1.38777878e-16" />
+      <geometry>
+        <mesh filename="meshes/0134_Wrist_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Feetech_Servo_Motor_v1_5">
+    <inertial>
+      <origin xyz="0.000132301461 -0.000217138704 1.55431223e-15" rpy="0 0 0" />
+      <mass value="0.276778822277" />
+      <inertia ixx="5.97197017515e-05" iyy="3.80498740514e-05" izz="7.11881124219e-05" ixy="-1.18120188979e-07" iyz="-1.04083408559e-17" ixz="-5.55111512313e-17" />
+    </inertial>
+    <visual>
+      <origin xyz="0.01825 0.0125 1.99840144e-15" rpy="-1.38777878e-16 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0135_Feetech_Servo_Motor_v1_5_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.01825 0.0125 1.99840144e-15" rpy="-1.38777878e-16 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0135_Feetech_Servo_Motor_v1_5_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-0.01825 0.0125 1.88737914e-15" rpy="3.14159265 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0136_Feetech_Servo_Motor_v1_5_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.01825 0.0125 1.88737914e-15" rpy="3.14159265 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0136_Feetech_Servo_Motor_v1_5_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0137_Feetech_Servo_Motor_v1_5_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0137_Feetech_Servo_Motor_v1_5_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_5_support_v1_1">
+    <inertial>
+      <origin xyz="0.00895852306 0.0225413702 -2.77689298e-08" rpy="0 0 0" />
+      <mass value="0.053233761935" />
+      <inertia ixx="2.49893665178e-05" iyy="1.03828778909e-05" izz="1.74814660369e-05" ixy="2.6615504813e-07" iyz="-3.168892915e-11" ixz="-1.32382924067e-11" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159265 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0138_Motor_5_support_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159265 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0138_Motor_5_support_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Gripper_Base_v1_1">
+    <inertial>
+      <origin xyz="0.0401750174 -0.0315000978 -0.0176213616" rpy="0 0 0" />
+      <mass value="1.38812152975" />
+      <inertia ixx="0.00222435068089" iyy="0.0012034017338" izz="0.00298537492285" ixy="-1.06878917522e-08" iyz="-1.94087333358e-09" ixz="0.000151377070693" />
+    </inertial>
+    <visual>
+      <origin xyz="0.049 -0.0215 -0.0225" rpy="-4.24660307e-15 -1.5974302e-13 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0139_Gripper_Base_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.049 -0.0215 -0.0225" rpy="-4.24660307e-15 -1.5974302e-13 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0139_Gripper_Base_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.049 -0.0215 -0.0225" rpy="-4.24660307e-15 -1.5974302e-13 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0139_Gripper_Base_v1_1_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.049 -0.0215 -0.0225" rpy="-4.24660307e-15 -1.5974302e-13 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0139_Gripper_Base_v1_1_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Feetech_Servo_Motor_v1_6">
+    <inertial>
+      <origin xyz="1.55431223e-15 0.000132301461 -0.000217138704" rpy="0 0 0" />
+      <mass value="0.276778822277" />
+      <inertia ixx="7.11881124218e-05" iyy="5.97197017514e-05" izz="3.80498740514e-05" ixy="7.10152422978e-18" iyz="-1.18120188977e-07" ixz="2.77555756156e-17" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0.01825 0.0125" rpy="1.57079633 4.18537073e-15 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0140_Feetech_Servo_Motor_v1_6_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.01825 0.0125" rpy="1.57079633 4.18537073e-15 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0140_Feetech_Servo_Motor_v1_6_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 -0.01825 0.0125" rpy="-1.57079633 4.18537073e-15 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0141_Feetech_Servo_Motor_v1_6_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.01825 0.0125" rpy="-1.57079633 4.18537073e-15 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0141_Feetech_Servo_Motor_v1_6_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.5974302e-13 4.18537073e-15 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0142_Feetech_Servo_Motor_v1_6_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.5974302e-13 4.18537073e-15 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0142_Feetech_Servo_Motor_v1_6_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_6_cap_v1_1">
+    <inertial>
+      <origin xyz="-0.0191121567 0.0520000074 -0.00814735229" rpy="0 0 0" />
+      <mass value="0.252635459055" />
+      <inertia ixx="0.000295060490682" iyy="8.70147909185e-05" izz="0.000328446198631" ixy="2.39488275565e-10" iyz="-1.35377559857e-12" ixz="2.18046451813e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="4.71896411e-15 1.63505218e-13 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0143_Motor_6_cap_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="4.71896411e-15 1.63505218e-13 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0143_Motor_6_cap_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Gripper_Finger_v1_1">
+    <inertial>
+      <origin xyz="0.0335187367 7.37356845e-07 0.00076354157" rpy="0 0 0" />
+      <mass value="0.444600008703" />
+      <inertia ixx="0.000171626801804" iyy="0.000203140034202" izz="0.000342021221014" ixy="5.97581337886e-09" iyz="4.27791833218e-09" ixz="5.03578806355e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="5.55111512e-16 -0.0185 -2.99760217e-15" rpy="1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0144_Gripper_Finger_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="5.55111512e-16 -0.0185 -2.99760217e-15" rpy="1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0144_Gripper_Finger_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="5.55111512e-16 -0.0185 -2.99760217e-15" rpy="1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0144_Gripper_Finger_v1_1_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="5.55111512e-16 -0.0185 -2.99760217e-15" rpy="1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0144_Gripper_Finger_v1_1_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Base_v1_2">
+    <inertial>
+      <origin xyz="-2.55087842e-11 -0.00193950116 -0.000708120032" rpy="0 0 0" />
+      <mass value="0.350631260559" />
+      <inertia ixx="0.000118221075973" iyy="0.000202100760348" izz="0.000129335678661" ixy="-6.97939071852e-14" iyz="-1.93161578899e-07" ixz="2.63602172452e-13" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.77555756e-17 -2.03431892e-16 5.67404258e-16" />
+      <geometry>
+        <mesh filename="meshes/0145_Base_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.77555756e-17 -2.03431892e-16 5.67404258e-16" />
+      <geometry>
+        <mesh filename="meshes/0145_Base_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Feetech_Servo_Motor_v1_7">
+    <inertial>
+      <origin xyz="-1.7024278e-15 0.000217138704 -0.000132301461" rpy="0 0 0" />
+      <mass value="0.276778822277" />
+      <inertia ixx="7.11881124219e-05" iyy="3.80498740514e-05" izz="5.97197017514e-05" ixy="-5.99275810182e-18" iyz="-1.18120188984e-07" ixz="7.13540554767e-18" />
+    </inertial>
+    <visual>
+      <origin xyz="-1.17635936e-17 -0.0125 -0.01825" rpy="3.14159265 -2.03431892e-16 3.86993016e-16" />
+      <geometry>
+        <mesh filename="meshes/0146_Feetech_Servo_Motor_v1_7_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-1.17635936e-17 -0.0125 -0.01825" rpy="3.14159265 -2.03431892e-16 3.86993016e-16" />
+      <geometry>
+        <mesh filename="meshes/0146_Feetech_Servo_Motor_v1_7_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-3.08455518e-17 -0.0125 0.01825" rpy="-5.55111512e-17 -2.03431892e-16 3.86993016e-16" />
+      <geometry>
+        <mesh filename="meshes/0147_Feetech_Servo_Motor_v1_7_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-3.08455518e-17 -0.0125 0.01825" rpy="-5.55111512e-17 -2.03431892e-16 3.86993016e-16" />
+      <geometry>
+        <mesh filename="meshes/0147_Feetech_Servo_Motor_v1_7_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.57079633 -2.03431892e-16 3.86993016e-16" />
+      <geometry>
+        <mesh filename="meshes/0148_Feetech_Servo_Motor_v1_7_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.57079633 -2.03431892e-16 3.86993016e-16" />
+      <geometry>
+        <mesh filename="meshes/0148_Feetech_Servo_Motor_v1_7_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_1_Support_v1_2">
+    <inertial>
+      <origin xyz="-2.58130523e-08 -0.0372481764 -0.000172555938" rpy="0 0 0" />
+      <mass value="0.515484380967" />
+      <inertia ixx="0.000198574960128" iyy="0.000234200296079" izz="0.000298606321485" ixy="2.27868358531e-10" iyz="1.24145704689e-06" ixz="-1.31600261152e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="2.77555756e-17 9.24095899e-17 -3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0149_Motor_1_Support_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="2.77555756e-17 9.24095899e-17 -3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0149_Motor_1_Support_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Shoulder_v1_2">
+    <inertial>
+      <origin xyz="-0.00347232531 -0.0434463768 7.15063818e-06" rpy="0 0 0" />
+      <mass value="0.911762037294" />
+      <inertia ixx="0.00108495849457" iyy="0.000805180482554" izz="0.000631100679691" ixy="-0.000109379750021" iyz="6.49153650278e-09" ixz="-5.52904095901e-08" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.01875 -0.07011 -2.55351296e-15" rpy="-3.14159265 -6.94601701e-19 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0150_Shoulder_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.01875 -0.07011 -2.55351296e-15" rpy="-3.14159265 -6.94601701e-19 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0150_Shoulder_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Feetech_Servo_Motor_v1_8">
+    <inertial>
+      <origin xyz="-0.000132301461 0.000217138704 1.55431223e-15" rpy="0 0 0" />
+      <mass value="0.276778822277" />
+      <inertia ixx="5.97197017515e-05" iyy="3.80498740514e-05" izz="7.11881124219e-05" ixy="-1.18120188981e-07" iyz="1.38777878078e-17" ixz="-8.56519716264e-18" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.01825 -0.0125 -2.55351296e-15" rpy="-3.14159265 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0151_Feetech_Servo_Motor_v1_8_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.01825 -0.0125 -2.55351296e-15" rpy="-3.14159265 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0151_Feetech_Servo_Motor_v1_8_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.01825 -0.0125 2.55351296e-15" rpy="1.22464683e-16 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0152_Feetech_Servo_Motor_v1_8_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.01825 -0.0125 2.55351296e-15" rpy="1.22464683e-16 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0152_Feetech_Servo_Motor_v1_8_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0153_Feetech_Servo_Motor_v1_8_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0153_Feetech_Servo_Motor_v1_8_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_2_Support_v1_2">
+    <inertial>
+      <origin xyz="-0.000163353268 -0.0113775738 0" rpy="0 0 0" />
+      <mass value="0.852172395555" />
+      <inertia ixx="0.000613344101818" iyy="0.00053488366295" izz="0.00027869484336" ixy="1.90063236039e-06" iyz="0" ixz="4.64038529824e-17" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-3.14159265 -6.94601701e-19 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0154_Motor_2_Support_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-3.14159265 -6.94601701e-19 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0154_Motor_2_Support_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Bicep_Left_v1_2">
+    <inertial>
+      <origin xyz="-0.0102810109 -0.012892018 -9.40535356e-05" rpy="0 0 0" />
+      <mass value="0.384856570856" />
+      <inertia ixx="0.000524899013257" iyy="0.000161661472558" izz="0.000380941493602" ixy="1.52624689693e-05" iyz="-1.97329907962e-06" ixz="1.24693390318e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.01175 0 -1.66533454e-15" rpy="-1.57079633 -6.94601702e-19 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0155_Bicep_Left_v1_2_Component1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.01175 0 -1.66533454e-15" rpy="-1.57079633 -6.94601702e-19 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0155_Bicep_Left_v1_2_Component1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Bicep_Right_v1_2">
+    <inertial>
+      <origin xyz="0.0484251444 -0.0790600702 -1.52503566e-08" rpy="0 0 0" />
+      <mass value="0.981415377094" />
+      <inertia ixx="0.00147012011868" iyy="0.000737945715733" izz="0.00208410618895" ixy="-0.000464500627686" iyz="3.69947811274e-09" ixz="2.21779269255e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.57079633 -6.94601702e-19 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0157_Bicep_Right_v1_2_Component1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.57079633 -6.94601702e-19 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0157_Bicep_Right_v1_2_Component1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Feetech_Servo_Motor_v1_9">
+    <inertial>
+      <origin xyz="-0.000132301461 0.000217138704 1.55431223e-15" rpy="0 0 0" />
+      <mass value="0.276778822277" />
+      <inertia ixx="5.97197017515e-05" iyy="3.80498740514e-05" izz="7.11881124219e-05" ixy="-1.18120188981e-07" iyz="4.16333634234e-17" ixz="-8.71088682956e-18" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.01825 -0.0125 -2.44249065e-15" rpy="-3.14159265 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0159_Feetech_Servo_Motor_v1_9_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.01825 -0.0125 -2.44249065e-15" rpy="-3.14159265 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0159_Feetech_Servo_Motor_v1_9_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.01825 -0.0125 2.55351296e-15" rpy="1.22464683e-16 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0160_Feetech_Servo_Motor_v1_9_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.01825 -0.0125 2.55351296e-15" rpy="1.22464683e-16 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0160_Feetech_Servo_Motor_v1_9_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0161_Feetech_Servo_Motor_v1_9_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0161_Feetech_Servo_Motor_v1_9_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_3_support_v1_2">
+    <inertial>
+      <origin xyz="-0.000486224659 -0.00651765801 0.0125250027" rpy="0 0 0" />
+      <mass value="0.0940349620205" />
+      <inertia ixx="4.22459127155e-05" iyy="2.70900549462e-05" izz="3.88339157047e-05" ixy="-1.88179362559e-07" iyz="3.75911107797e-12" ixz="1.95886563602e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.83697023e-16 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0162_Motor_3_support_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.83697023e-16 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0162_Motor_3_support_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Forearm_v1_2">
+    <inertial>
+      <origin xyz="-0.00333472187 -0.0742015879 -9.69844939e-08" rpy="0 0 0" />
+      <mass value="0.985619003143" />
+      <inertia ixx="0.00178437457478" iyy="0.000632690976033" izz="0.00231524955638" ixy="0.0001096592704" iyz="5.87809739772e-09" ixz="3.24656245724e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="-4.87890978e-17 -0.121475 9.99200722e-16" rpy="-1.57079633 -1.38034363e-13 -1.22464683e-16" />
+      <geometry>
+        <mesh filename="meshes/0163_Forearm_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-4.87890978e-17 -0.121475 9.99200722e-16" rpy="-1.57079633 -1.38034363e-13 -1.22464683e-16" />
+      <geometry>
+        <mesh filename="meshes/0163_Forearm_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Feetech_Servo_Motor_v1_10">
+    <inertial>
+      <origin xyz="-0.000132301461 0.000217138704 1.55431223e-15" rpy="0 0 0" />
+      <mass value="0.276778822277" />
+      <inertia ixx="5.97197017514e-05" iyy="3.80498740514e-05" izz="7.11881124219e-05" ixy="-1.18120188981e-07" iyz="0" ixz="-8.70749869777e-18" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.01825 -0.0125 -2.55351296e-15" rpy="-3.14159265 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0164_Feetech_Servo_Motor_v1_10_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.01825 -0.0125 -2.55351296e-15" rpy="-3.14159265 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0164_Feetech_Servo_Motor_v1_10_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.01825 -0.0125 2.55351296e-15" rpy="1.22464683e-16 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0165_Feetech_Servo_Motor_v1_10_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.01825 -0.0125 2.55351296e-15" rpy="1.22464683e-16 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0165_Feetech_Servo_Motor_v1_10_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0166_Feetech_Servo_Motor_v1_10_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0166_Feetech_Servo_Motor_v1_10_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_4_support_v1_2">
+    <inertial>
+      <origin xyz="-0.000203310878 -0.0335493649 0.0102252723" rpy="0 0 0" />
+      <mass value="0.12648512497" />
+      <inertia ixx="6.1434410579e-05" iyy="3.71295677851e-05" izz="5.03751904178e-05" ixy="-1.1144367607e-07" iyz="-8.07548472537e-14" ixz="-9.45470152771e-14" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.86059464 -1.38034363e-13 -2.62669773e-16" />
+      <geometry>
+        <mesh filename="meshes/0167_Motor_4_support_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.86059464 -1.38034363e-13 -2.62669773e-16" />
+      <geometry>
+        <mesh filename="meshes/0167_Motor_4_support_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Wrist_v1_2">
+    <inertial>
+      <origin xyz="0.00172064746 -0.0325480561 -3.32130809e-05" rpy="0 0 0" />
+      <mass value="0.462775566962" />
+      <inertia ixx="0.000192037555046" iyy="0.000364406922792" izz="0.000446629155864" ixy="3.53565602801e-05" iyz="-5.65042072853e-08" ixz="-4.20617539921e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="-4.06575815e-20 -1.66533454e-15 0" rpy="-3.14159265 -2.51643989e-17 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0168_Wrist_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-4.06575815e-20 -1.66533454e-15 0" rpy="-3.14159265 -2.51643989e-17 -1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0168_Wrist_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Feetech_Servo_Motor_v1_11">
+    <inertial>
+      <origin xyz="0.000217138704 -0.000132301461 -1.55431223e-15" rpy="0 0 0" />
+      <mass value="0.276778822277" />
+      <inertia ixx="3.80498740514e-05" iyy="5.97197017514e-05" izz="7.1188112422e-05" ixy="-1.1812018898e-07" iyz="0" ixz="-1.04083408559e-17" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0125 -0.01825 -1.66533454e-15" rpy="1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0169_Feetech_Servo_Motor_v1_11_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0125 -0.01825 -1.66533454e-15" rpy="1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0169_Feetech_Servo_Motor_v1_11_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-0.0125 0.01825 -1.66533454e-15" rpy="-1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0170_Feetech_Servo_Motor_v1_11_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0125 0.01825 -1.66533454e-15" rpy="-1.57079633 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0170_Feetech_Servo_Motor_v1_11_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="-2.78943535e-14 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0171_Feetech_Servo_Motor_v1_11_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-2.78943535e-14 -1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0171_Feetech_Servo_Motor_v1_11_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_5_support_v1_2">
+    <inertial>
+      <origin xyz="-0.0225413702 -0.00895852306 2.77689328e-08" rpy="0 0 0" />
+      <mass value="0.053233761935" />
+      <inertia ixx="1.03828778909e-05" iyy="2.49893665178e-05" izz="1.74814660369e-05" ixy="2.66155048131e-07" iyz="-1.32382958762e-11" ixz="-3.16889281742e-11" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0172_Motor_5_support_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.57079633 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0172_Motor_5_support_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Gripper_Base_v1_2">
+    <inertial>
+      <origin xyz="0.0314999022 -0.0401750174 -0.0176213616" rpy="0 0 0" />
+      <mass value="1.38812152975" />
+      <inertia ixx="0.0012034017338" iyy="0.00222435068089" izz="0.00298537492285" ixy="1.06878917452e-08" iyz="-0.000151377070693" ixz="-1.94087328501e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="0.0415 -0.049 -0.0225" rpy="-2.51643989e-17 -1.3850687e-13 3.28078984e-30" />
+      <geometry>
+        <mesh filename="meshes/0173_Gripper_Base_v1_2_body002.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0415 -0.049 -0.0225" rpy="-2.51643989e-17 -1.3850687e-13 3.28078984e-30" />
+      <geometry>
+        <mesh filename="meshes/0173_Gripper_Base_v1_2_body002.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0.0415 -0.049 -0.0225" rpy="-2.51643989e-17 -1.3850687e-13 3.28078984e-30" />
+      <geometry>
+        <mesh filename="meshes/0173_Gripper_Base_v1_2_body003.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0415 -0.049 -0.0225" rpy="-2.51643989e-17 -1.3850687e-13 3.28078984e-30" />
+      <geometry>
+        <mesh filename="meshes/0173_Gripper_Base_v1_2_body003.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Feetech_Servo_Motor_v1_12">
+    <inertial>
+      <origin xyz="0.000132301461 -1.77635684e-15 -0.000217138704" rpy="0 0 0" />
+      <mass value="0.276778822277" />
+      <inertia ixx="5.97197017514e-05" iyy="7.11881124219e-05" izz="3.80498740513e-05" ixy="-7.1557343384e-18" iyz="0" ixz="-1.18120188978e-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0.01825 0 0.0125" rpy="1.57079633 -3.6067941e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0174_Feetech_Servo_Motor_v1_12_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.01825 0 0.0125" rpy="1.57079633 -3.6067941e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0174_Feetech_Servo_Motor_v1_12_Feetech_Servo_Horn_v1_1_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-0.01825 0 0.0125" rpy="-1.57079633 -3.6067941e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0175_Feetech_Servo_Motor_v1_12_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.01825 0 0.0125" rpy="-1.57079633 -3.6067941e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0175_Feetech_Servo_Motor_v1_12_Feetech_Servo_Horn_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.3850687e-13 -3.6067941e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0176_Feetech_Servo_Motor_v1_12_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="-1.3850687e-13 -3.6067941e-17 1.57079633" />
+      <geometry>
+        <mesh filename="meshes/0176_Feetech_Servo_Motor_v1_12_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Motor_6_cap_v1_2">
+    <inertial>
+      <origin xyz="0.0520000074 0.0191121567 -0.00814735229" rpy="0 0 0" />
+      <mass value="0.252635459055" />
+      <inertia ixx="8.70147909185e-05" iyy="0.000295060490682" izz="0.000328446198632" ixy="-2.39488272963e-10" iyz="-2.18046451813e-05" ixz="-1.35380335414e-12" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="1.44098986e-16 2.75503524e-13 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0177_Motor_6_cap_v1_2_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="1.44098986e-16 2.75503524e-13 3.14159265" />
+      <geometry>
+        <mesh filename="meshes/0177_Motor_6_cap_v1_2_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="Gripper_Finger_v1_2">
+    <inertial>
+      <origin xyz="7.37356849e-07 -0.0335187367 0.00076354157" rpy="0 0 0" />
+      <mass value="0.444600008703" />
+      <inertia ixx="0.000203140034202" iyy="0.000171626801804" izz="0.000342021221014" ixy="-5.97581337517e-09" iyz="-5.0357880636e-06" ixz="4.27791833571e-09" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.0185 -2.66453526e-15 -2.22044605e-15" rpy="3.14159265 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0178_Gripper_Finger_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0185 -2.66453526e-15 -2.22044605e-15" rpy="3.14159265 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0178_Gripper_Finger_v1_2_body000.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="-0.0185 -2.66453526e-15 -2.22044605e-15" rpy="3.14159265 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0178_Gripper_Finger_v1_2_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.0185 -2.66453526e-15 -2.22044605e-15" rpy="3.14159265 1.57079633 0" />
+      <geometry>
+        <mesh filename="meshes/0178_Gripper_Finger_v1_2_body001.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rigid_1" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Level_1_Plate_v1_1" />
+  </joint>
+  <joint name="rigid_2" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Level_1_Plate_v1_2" />
+  </joint>
+  <joint name="rigid_3" type="fixed">
+    <origin xyz="1.0658141e-16 1.0658141e-16 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Level_1_Plate_v1_3" />
+  </joint>
+  <joint name="rigid_4" type="fixed">
+    <origin xyz="1.77635684e-17 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Level_1_Plate_v1_4" />
+  </joint>
+  <joint name="rigid_30" type="fixed">
+    <origin xyz="-0.0269237978 0.0269237978 0.093" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Linear_Actator_Stabilizer_v1_1" />
+  </joint>
+  <joint name="linear_actuator" type="prismatic">
+    <origin xyz="0.000105269627 -0.000105269627 0.7922" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Linear_Actuator_Assembly_v1_1" />
+    <axis xyz="0 0 1" />
+    <limit lower="-0.315" upper="0" effort="1000" velocity="0.1" />
+  </joint>
+  <joint name="rigid_23" type="fixed">
+    <origin xyz="-9.54791801e-17 -3.55271368e-17 0.0025" rpy="0 0 0" />
+    <parent link="Level_1_Plate_v1_1" />
+    <child link="First_Level_Hinge_Wall_Lower_v1_1" />
+  </joint>
+  <joint name="rigid_31" type="fixed">
+    <origin xyz="0.207 0 -3.55271368e-17" rpy="0 0 0" />
+    <parent link="Level_1_Plate_v1_1" />
+    <child link="Side_Flares_v1_1" />
+  </joint>
+  <joint name="rigid_32" type="fixed">
+    <origin xyz="0 0.207 -2.24126273e-17" rpy="0 0 0" />
+    <parent link="Level_1_Plate_v1_1" />
+    <child link="Side_Flares_v1_2" />
+  </joint>
+  <joint name="rigid_5" type="fixed">
+    <origin xyz="-0.163234019 0.0438370491 -0.0105" rpy="0 0 0" />
+    <parent link="Level_1_Plate_v1_2" />
+    <child link="Wheel_Holder_v1_1" />
+  </joint>
+  <joint name="rigid_7" type="fixed">
+    <origin xyz="-0.140604612 0.260001582 -0.0105" rpy="0 0 0" />
+    <parent link="Level_1_Plate_v1_2" />
+    <child link="Wheel_Holder_MIRRORED_v1_1" />
+  </joint>
+  <joint name="rigid_21" type="fixed">
+    <origin xyz="-0.0948246254 0.0948253926 0.011" rpy="0 0 0" />
+    <parent link="Level_1_Plate_v1_2" />
+    <child link="Battery_Holder_v1_1" />
+  </joint>
+  <joint name="rigid_22" type="fixed">
+    <origin xyz="-1.82964754e-15 -7.10542736e-16 0" rpy="0 0 0" />
+    <parent link="Level_1_Plate_v1_2" />
+    <child link="Bottom_Wall_Back_v1_1" />
+  </joint>
+  <joint name="rigid_33" type="fixed">
+    <origin xyz="-0.207 -1.4502247e-17 -7.14630801e-17" rpy="0 0 0" />
+    <parent link="Level_1_Plate_v1_2" />
+    <child link="Side_Flares_v1_3" />
+  </joint>
+  <joint name="rigid_25" type="fixed">
+    <origin xyz="-1.77635684e-16 -3.55271368e-17 0.0025" rpy="0 0 0" />
+    <parent link="Level_1_Plate_v1_3" />
+    <child link="Mirrored_Hinge_Wall_Lower_v1_1" />
+  </joint>
+  <joint name="rigid_34" type="fixed">
+    <origin xyz="7.10542736e-17 -0.207 -2.24126273e-17" rpy="0 0 0" />
+    <parent link="Level_1_Plate_v1_3" />
+    <child link="Side_Flares_v1_4" />
+  </joint>
+  <joint name="rigid_6" type="fixed">
+    <origin xyz="0.163234019 -0.0438370491 -0.0105" rpy="0 0 0" />
+    <parent link="Level_1_Plate_v1_4" />
+    <child link="Wheel_Holder_v1_2" />
+  </joint>
+  <joint name="rigid_8" type="fixed">
+    <origin xyz="0.140604612 -0.260001582 -0.0105" rpy="0 0 0" />
+    <parent link="Level_1_Plate_v1_4" />
+    <child link="Wheel_Holder_MIRRORED_v1_2" />
+  </joint>
+  <joint name="rigid_27" type="fixed">
+    <origin xyz="-1.77635684e-17 0 0" rpy="0 0 0" />
+    <parent link="Level_1_Plate_v1_4" />
+    <child link="Bottom_Wall_Front_LIDAR_v1_1" />
+  </joint>
+  <joint name="rigid_98" type="fixed">
+    <origin xyz="0.223515038 -3.13405714e-14 -0.08825" rpy="0 0 0" />
+    <parent link="Linear_Actuator_Assembly_v1_1" />
+    <child link="Base_v1_1" />
+  </joint>
+  <joint name="rigid_120" type="fixed">
+    <origin xyz="2.93231151e-14 -0.223515038 -0.08825" rpy="0 0 0" />
+    <parent link="Linear_Actuator_Assembly_v1_1" />
+    <child link="Base_v1_2" />
+  </joint>
+  <joint name="rigid_24" type="fixed">
+    <origin xyz="9.54791801e-17 1.77635684e-17 0" rpy="0 0 0" />
+    <parent link="First_Level_Hinge_Wall_Lower_v1_1" />
+    <child link="First_Level_Hinge_Wall_Upper_v1_1" />
+  </joint>
+  <joint name="rigid_29" type="fixed">
+    <origin xyz="9.54791801e-17 3.55271368e-17 0.105" rpy="0 0 0" />
+    <parent link="First_Level_Hinge_Wall_Lower_v1_1" />
+    <child link="Door_Assembly_v1_2" />
+  </joint>
+  <joint name="rigid_11" type="fixed">
+    <origin xyz="0.0102884037 0.0102884037 -0.047025" rpy="0 0 0" />
+    <parent link="Wheel_Holder_v1_1" />
+    <child link="Wheel_Motor_v1_3" />
+  </joint>
+  <joint name="rigid_10" type="fixed">
+    <origin xyz="0.0864791593 -0.107055967 -0.047025" rpy="0 0 0" />
+    <parent link="Wheel_Holder_MIRRORED_v1_1" />
+    <child link="Wheel_Motor_v1_2" />
+  </joint>
+  <joint name="rigid_140" type="fixed">
+    <origin xyz="-1.64789138e-07 6.9388939e-17 0.0935" rpy="0 0 0" />
+    <parent link="Battery_Holder_v1_1" />
+    <child link="Battery_Holder_Lid_v1_1" />
+  </joint>
+  <joint name="rigid_35" type="fixed">
+    <origin xyz="-0.132264323 0.132193613 0.1615375" rpy="0 0 0" />
+    <parent link="Bottom_Wall_Back_v1_1" />
+    <child link="Fuse_Holder_v1_1" />
+  </joint>
+  <joint name="rigid_39" type="fixed">
+    <origin xyz="7.17095718e-17 -2.53501887e-17 0.215" rpy="0 0 0" />
+    <parent link="Bottom_Wall_Back_v1_1" />
+    <child link="Level_2_Base_Plate_v1_4" />
+  </joint>
+  <joint name="rigid_26" type="fixed">
+    <origin xyz="6.39488462e-16 1.31450406e-15 -6.39679282e-16" rpy="0 0 0" />
+    <parent link="Mirrored_Hinge_Wall_Lower_v1_1" />
+    <child link="Mirrored_Hinge_Wall_Upper_v1_1" />
+  </joint>
+  <joint name="rigid_28" type="fixed">
+    <origin xyz="-6.58514449e-17 2.43487129e-16 0.105" rpy="0 0 0" />
+    <parent link="Mirrored_Hinge_Wall_Lower_v1_1" />
+    <child link="Door_Assembly_v1_1" />
+  </joint>
+  <joint name="rigid_9" type="fixed">
+    <origin xyz="-0.0102884037 -0.0102884037 -0.047025" rpy="0 0 0" />
+    <parent link="Wheel_Holder_v1_2" />
+    <child link="Wheel_Motor_v1_1" />
+  </joint>
+  <joint name="rigid_12" type="fixed">
+    <origin xyz="-0.0864791593 0.107055967 -0.047025" rpy="0 0 0" />
+    <parent link="Wheel_Holder_MIRRORED_v1_2" />
+    <child link="Wheel_Motor_v1_4" />
+  </joint>
+  <joint name="rigid_37" type="fixed">
+    <origin xyz="1.84188666e-17 2.53501887e-17 0.215" rpy="0 0 0" />
+    <parent link="Bottom_Wall_Front_LIDAR_v1_1" />
+    <child link="Level_2_Base_Plate_v1_2" />
+  </joint>
+  <joint name="rigid_99" type="fixed">
+    <origin xyz="0.0225 -3.52983701e-15 0.000125" rpy="0 0 0" />
+    <parent link="Base_v1_1" />
+    <child link="Feetech_Servo_Motor_v1_1" />
+  </joint>
+  <joint name="rigid_100" type="fixed">
+    <origin xyz="-0.0001 1.66980687e-15 0" rpy="0 0 0" />
+    <parent link="Base_v1_1" />
+    <child link="Motor_1_Support_v1_1" />
+  </joint>
+  <joint name="rigid_121" type="fixed">
+    <origin xyz="4.52383356e-17 -0.0225 0.000125" rpy="0 0 0" />
+    <parent link="Base_v1_2" />
+    <child link="Feetech_Servo_Motor_v1_7" />
+  </joint>
+  <joint name="rigid_122" type="fixed">
+    <origin xyz="1.68753358e-15 0.0001 0" rpy="0 0 0" />
+    <parent link="Base_v1_2" />
+    <child link="Motor_1_Support_v1_2" />
+  </joint>
+  <joint name="rigid_38" type="fixed">
+    <origin xyz="-2.53501887e-17 -1.77635684e-17 0.2125" rpy="0 0 0" />
+    <parent link="First_Level_Hinge_Wall_Upper_v1_1" />
+    <child link="Level_2_Base_Plate_v1_3" />
+  </joint>
+  <joint name="rear_right_wheel" type="continuous">
+    <origin xyz="-0.0434517117 -0.0434517117 -0.0076" rpy="0 0 0" />
+    <parent link="Wheel_Motor_v1_3" />
+    <child link="Wheel_Coupler_v1_3" />
+    <axis xyz="-0.707106781 -0.707106781 -9.46704359e-15" />
+  </joint>
+  <joint name="rear_left_wheel" type="continuous">
+    <origin xyz="0.0434517117 0.0434517117 -0.0076" rpy="0 0 0" />
+    <parent link="Wheel_Motor_v1_2" />
+    <child link="Wheel_Coupler_v1_1" />
+    <axis xyz="0.707106781 0.707106781 1.44238493e-14" />
+  </joint>
+  <joint name="rigid_42" type="fixed">
+    <origin xyz="-0.15 9.09087716e-16 0.015" rpy="0 0 0" />
+    <parent link="Level_2_Base_Plate_v1_4" />
+    <child link="Plate_Connector_v1_3" />
+  </joint>
+  <joint name="rigid_48" type="fixed">
+    <origin xyz="-1.84188666e-17 2.02985873e-16 0.0125" rpy="0 0 0" />
+    <parent link="Level_2_Base_Plate_v1_4" />
+    <child link="Second_Level_Hinge_Wall_Lower_v1_1" />
+  </joint>
+  <joint name="rigid_62" type="fixed">
+    <origin xyz="-0.0888391583 0.0890397132 0.01" rpy="0 0 0" />
+    <parent link="Level_2_Base_Plate_v1_4" />
+    <child link="PCB_Holder_v1_1" />
+  </joint>
+  <joint name="rigid_36" type="fixed">
+    <origin xyz="2.31581687e-16 -1.31450406e-15 0.2125" rpy="0 0 0" />
+    <parent link="Mirrored_Hinge_Wall_Upper_v1_1" />
+    <child link="Level_2_Base_Plate_v1_1" />
+  </joint>
+  <joint name="front_left_wheel" type="continuous">
+    <origin xyz="0.0434517117 0.0434517117 -0.0076" rpy="0 0 0" />
+    <parent link="Wheel_Motor_v1_1" />
+    <child link="Wheel_Coupler_v1_2" />
+    <axis xyz="0.707106781 0.707106781 -9.46704359e-15" />
+  </joint>
+  <joint name="front_right_wheel" type="continuous">
+    <origin xyz="-0.0434517117 -0.0434517117 -0.0076" rpy="0 0 0" />
+    <parent link="Wheel_Motor_v1_4" />
+    <child link="Wheel_Coupler_v1_4" />
+    <axis xyz="-0.707106781 -0.707106781 1.44238493e-14" />
+  </joint>
+  <joint name="rigid_40" type="fixed">
+    <origin xyz="0.15 -2.53501887e-17 0.015" rpy="0 0 0" />
+    <parent link="Level_2_Base_Plate_v1_2" />
+    <child link="Plate_Connector_v1_1" />
+  </joint>
+  <joint name="rigid_44" type="fixed">
+    <origin xyz="0.121799143 -0.121799143 0.0125" rpy="0 0 0" />
+    <parent link="Level_2_Base_Plate_v1_2" />
+    <child link="IMU_Bracket_v1_1" />
+  </joint>
+  <joint name="rigid_45" type="fixed">
+    <origin xyz="-6.55298221e-19 -4.31137571e-17 0.01" rpy="0 0 0" />
+    <parent link="Level_2_Base_Plate_v1_2" />
+    <child link="Second_Level_Front_v1_1" />
+  </joint>
+  <joint name="left_shoulder_pan" type="revolute">
+    <origin xyz="0.0125 -2.1094644e-15 0" rpy="0 0 0" />
+    <parent link="Feetech_Servo_Motor_v1_1" />
+    <child link="Shoulder_v1_1" />
+    <axis xyz="2.43339012e-17 -1.16743491e-16 1" />
+    <limit upper="1.570796" lower="-1.570796" effort="1000000" velocity="1000000" />
+  </joint>
+  <joint name="right_shoulder_pan" type="revolute">
+    <origin xyz="-4.56991216e-17 -0.0125 -2.22044605e-16" rpy="0 0 0" />
+    <parent link="Feetech_Servo_Motor_v1_7" />
+    <child link="Shoulder_v1_2" />
+    <axis xyz="2.03431892e-16 2.77555756e-17 -1" />
+    <limit upper="1.570796" lower="-1.570796" effort="1000000" velocity="1000000" />
+  </joint>
+  <joint name="rigid_41" type="fixed">
+    <origin xyz="2.53501887e-17 0.15 0.015" rpy="0 0 0" />
+    <parent link="Level_2_Base_Plate_v1_3" />
+    <child link="Plate_Connector_v1_2" />
+  </joint>
+  <joint name="rigid_46" type="fixed">
+    <origin xyz="7.58662035e-18 3.55271368e-17 0.01" rpy="0 0 0" />
+    <parent link="Level_2_Base_Plate_v1_3" />
+    <child link="Second_Level_Left_v1_1" />
+  </joint>
+  <joint name="rigid_20" type="fixed">
+    <origin xyz="0.0565685425 0.0565685425 7.49400542e-16" rpy="0 0 0" />
+    <parent link="Wheel_Coupler_v1_3" />
+    <child link="Mecanum_Wheel_MIRRORED_v1_2" />
+  </joint>
+  <joint name="rigid_18" type="fixed">
+    <origin xyz="0.0141421356 0.0141421356 2.63677968e-16" rpy="0 0 0" />
+    <parent link="Wheel_Coupler_v1_1" />
+    <child link="Mecanum_Wheel_v1_2" />
+  </joint>
+  <joint name="rigid_49" type="fixed">
+    <origin xyz="2.13162821e-16 0 -2.77555756e-16" rpy="0 0 0" />
+    <parent link="Second_Level_Hinge_Wall_Lower_v1_1" />
+    <child link="Second_Level_Hinge_Wall_Upper_v1_1" />
+  </joint>
+  <joint name="rigid_50" type="fixed">
+    <origin xyz="7.10542736e-17 -3.55271368e-17 0.105" rpy="0 0 0" />
+    <parent link="Second_Level_Hinge_Wall_Lower_v1_1" />
+    <child link="Door_Assembly_v1_3" />
+  </joint>
+  <joint name="rigid_43" type="fixed">
+    <origin xyz="-4.62508076e-16 -0.15 0.015" rpy="0 0 0" />
+    <parent link="Level_2_Base_Plate_v1_1" />
+    <child link="Plate_Connector_v1_4" />
+  </joint>
+  <joint name="rigid_47" type="fixed">
+    <origin xyz="2.65798228e-16 2.13162821e-16 0.01" rpy="0 0 0" />
+    <parent link="Level_2_Base_Plate_v1_1" />
+    <child link="Second_Level_Right_v1_1" />
+  </joint>
+  <joint name="rigid_19" type="fixed">
+    <origin xyz="-0.0565685425 -0.0565685425 7.63278329e-16" rpy="0 0 0" />
+    <parent link="Wheel_Coupler_v1_2" />
+    <child link="Mecanum_Wheel_MIRRORED_v1_1" />
+  </joint>
+  <joint name="rigid_17" type="fixed">
+    <origin xyz="-0.0141421356 -0.0141421356 2.49800181e-16" rpy="0 0 0" />
+    <parent link="Wheel_Coupler_v1_4" />
+    <child link="Mecanum_Wheel_v1_1" />
+  </joint>
+  <joint name="rigid_58" type="fixed">
+    <origin xyz="1.77635684e-16 5.32907052e-17 0.215" rpy="0 0 0" />
+    <parent link="Second_Level_Front_v1_1" />
+    <child link="Level_3_Front_Plate_v1_1" />
+  </joint>
+  <joint name="rigid_102" type="fixed">
+    <origin xyz="0.0575 -0.00503222139 -2.00284234e-13" rpy="0 0 0" />
+    <parent link="Shoulder_v1_1" />
+    <child link="Feetech_Servo_Motor_v1_2" />
+  </joint>
+  <joint name="rigid_103" type="fixed">
+    <origin xyz="0.07 -0.005 1.11022302e-16" rpy="0 0 0" />
+    <parent link="Shoulder_v1_1" />
+    <child link="Motor_2_Support_v1_1" />
+  </joint>
+  <joint name="left_shoulder_lift" type="revolute">
+    <origin xyz="0.07011 0.02475 -1.11022302e-16" rpy="0 0 0" />
+    <parent link="Shoulder_v1_1" />
+    <child link="Bicep_Left_v1_1" />
+    <axis xyz="-1.58861472e-13 -1 -1.2249273e-16" />
+    <limit upper="2.094395102" lower="-2.094395102" effort="1000000" velocity="1000000" />
+  </joint>
+  <joint name="rigid_124" type="fixed">
+    <origin xyz="0.00503222139 -0.0575 2.01283434e-13" rpy="0 0 0" />
+    <parent link="Shoulder_v1_2" />
+    <child link="Feetech_Servo_Motor_v1_8" />
+  </joint>
+  <joint name="rigid_125" type="fixed">
+    <origin xyz="0.005 -0.07 7.77156117e-16" rpy="0 0 0" />
+    <parent link="Shoulder_v1_2" />
+    <child link="Motor_2_Support_v1_2" />
+  </joint>
+  <joint name="right_shoulder_lift" type="revolute">
+    <origin xyz="-0.02475 -0.07011 -3.33066907e-15" rpy="0 0 0" />
+    <parent link="Shoulder_v1_2" />
+    <child link="Bicep_Left_v1_2" />
+    <axis xyz="1 -1.22464683e-16 1.38181133e-13" />
+    <limit upper="1.919862177" lower="-2.094395102" effort="1000000" velocity="1000000" />
+  </joint>
+  <joint name="rigid_56" type="fixed">
+    <origin xyz="-1.77635684e-17 2.48689958e-16 0.215" rpy="0 0 0" />
+    <parent link="Second_Level_Left_v1_1" />
+    <child link="Level_3_Left_Plate_v1_1" />
+  </joint>
+  <joint name="rigid_55" type="fixed">
+    <origin xyz="0.0307071068 -0.0742928932 0.6435" rpy="0 0 0" />
+    <parent link="Second_Level_Hinge_Wall_Upper_v1_1" />
+    <child link="Level_3_Back_Plate_v1_1" />
+  </joint>
+  <joint name="rigid_57" type="fixed">
+    <origin xyz="7.10542736e-17 -5.68434189e-16 0.215" rpy="0 0 0" />
+    <parent link="Second_Level_Right_v1_1" />
+    <child link="Level_3_Right_Plate_v1_1" />
+  </joint>
+  <joint name="rigid_65" type="fixed">
+    <origin xyz="0.0923575899 -0.0427895963 0.02505" rpy="0 0 0" />
+    <parent link="Level_3_Front_Plate_v1_1" />
+    <child link="Pot_Holder_v1_1" />
+  </joint>
+  <joint name="rigid_68" type="fixed">
+    <origin xyz="-2.66453526e-16 -1.77635684e-17 0.01" rpy="0 0 0" />
+    <parent link="Level_3_Front_Plate_v1_1" />
+    <child link="Third_Level_Front_Wall_v1_1" />
+  </joint>
+  <joint name="rigid_104" type="fixed">
+    <origin xyz="1.83186799e-15 0.01175 0" rpy="0 0 0" />
+    <parent link="Bicep_Left_v1_1" />
+    <child link="Bicep_Right_v1_1" />
+  </joint>
+  <joint name="rigid_126" type="fixed">
+    <origin xyz="-0.01175 0 -1.66533454e-15" rpy="0 0 0" />
+    <parent link="Bicep_Left_v1_2" />
+    <child link="Bicep_Right_v1_2" />
+  </joint>
+  <joint name="rigid_60" type="fixed">
+    <origin xyz="0.110000288 0.109999904 0.01" rpy="0 0 0" />
+    <parent link="Level_3_Left_Plate_v1_1" />
+    <child link="Motor_Driver_Holder_v1_2" />
+  </joint>
+  <joint name="rigid_69" type="fixed">
+    <origin xyz="-3.55271368e-17 -5.32907052e-16 0.1175" rpy="0 0 0" />
+    <parent link="Level_3_Left_Plate_v1_1" />
+    <child link="Third_Level_Left_Wall_v1_1" />
+  </joint>
+  <joint name="rigid_63" type="fixed">
+    <origin xyz="-0.104974622 0.148559641 -0.360375" rpy="0 0 0" />
+    <parent link="Level_3_Back_Plate_v1_1" />
+    <child link="Raspberry_Pi_Holder_v1_1" />
+  </joint>
+  <joint name="rigid_71" type="fixed">
+    <origin xyz="-0.0307071068 0.0742928932 -0.4185" rpy="0 0 0" />
+    <parent link="Level_3_Back_Plate_v1_1" />
+    <child link="Third_Level_Hinge_Wall_Lower_v1_1" />
+  </joint>
+  <joint name="rigid_86" type="fixed">
+    <origin xyz="-0.0453253114 0.0889615372 -0.1885" rpy="0 0 0" />
+    <parent link="Level_3_Back_Plate_v1_1" />
+    <child link="Anti_Deflection_Shaft_v1_1" />
+  </joint>
+  <joint name="rigid_59" type="fixed">
+    <origin xyz="-0.110000288 -0.109999904 0.01" rpy="0 0 0" />
+    <parent link="Level_3_Right_Plate_v1_1" />
+    <child link="Motor_Driver_Holder_v1_1" />
+  </joint>
+  <joint name="rigid_70" type="fixed">
+    <origin xyz="0 7.10542736e-17 0.1175" rpy="0 0 0" />
+    <parent link="Level_3_Right_Plate_v1_1" />
+    <child link="Third_Level_Right_Wall_v1_1" />
+  </joint>
+  <joint name="rigid_66" type="fixed">
+    <origin xyz="-0.000176776695 -0.000176776695 -5.55111512e-17" rpy="0 0 0" />
+    <parent link="Pot_Holder_v1_1" />
+    <child link="Potentiometer_v1_1" />
+  </joint>
+  <joint name="rigid_75" type="fixed">
+    <origin xyz="0.146373455 -0.146373455 0.15125" rpy="0 0 0" />
+    <parent link="Third_Level_Front_Wall_v1_1" />
+    <child link="Rectangle_Design_v1_1" />
+  </joint>
+  <joint name="rigid_76" type="fixed">
+    <origin xyz="0.0873350248 -0.187290565 0.15125" rpy="0 0 0" />
+    <parent link="Third_Level_Front_Wall_v1_1" />
+    <child link="Rectangle_Design_v1_2" />
+  </joint>
+  <joint name="rigid_77" type="fixed">
+    <origin xyz="0.187290565 -0.0873350248 0.15125" rpy="0 0 0" />
+    <parent link="Third_Level_Front_Wall_v1_1" />
+    <child link="Rectangle_Design_v1_3" />
+  </joint>
+  <joint name="rigid_78" type="fixed">
+    <origin xyz="0.13948165 -0.12170357 0.0135082092" rpy="0 0 0" />
+    <parent link="Third_Level_Front_Wall_v1_1" />
+    <child link="Breastplate_v1_1" />
+  </joint>
+  <joint name="rigid_107" type="fixed">
+    <origin xyz="0.1445 -0.03665 1.11022302e-16" rpy="0 0 0" />
+    <parent link="Bicep_Right_v1_1" />
+    <child link="Feetech_Servo_Motor_v1_3" />
+  </joint>
+  <joint name="rigid_108" type="fixed">
+    <origin xyz="0.142 -0.0364593403 0.012525" rpy="0 0 0" />
+    <parent link="Bicep_Right_v1_1" />
+    <child link="Motor_3_support_v1_1" />
+  </joint>
+  <joint name="rigid_128" type="fixed">
+    <origin xyz="0.03665 -0.1445 4.99600361e-15" rpy="0 0 0" />
+    <parent link="Bicep_Right_v1_2" />
+    <child link="Feetech_Servo_Motor_v1_9" />
+  </joint>
+  <joint name="rigid_129" type="fixed">
+    <origin xyz="0.0364593403 -0.142 -0.012525" rpy="0 0 0" />
+    <parent link="Bicep_Right_v1_2" />
+    <child link="Motor_3_support_v1_2" />
+  </joint>
+  <joint name="rigid_84" type="fixed">
+    <origin xyz="0 1.24344979e-16 0.0975" rpy="0 0 0" />
+    <parent link="Third_Level_Left_Wall_v1_1" />
+    <child link="Dome_Plate_Left_v1_1" />
+  </joint>
+  <joint name="rigid_64" type="fixed">
+    <origin xyz="-0.033233847 0.0332341904 -2.42789363e-07" rpy="0 0 0" />
+    <parent link="Raspberry_Pi_Holder_v1_1" />
+    <child link="Raspberry_Pi_Holder_Lid_v1_1" />
+  </joint>
+  <joint name="rigid_72" type="fixed">
+    <origin xyz="-1.0658141e-16 -1.0658141e-15 -3.88578059e-16" rpy="0 0 0" />
+    <parent link="Third_Level_Hinge_Wall_Lower_v1_1" />
+    <child link="Third_Level_Hinge_Wall_Upper_v1_1" />
+  </joint>
+  <joint name="rigid_73" type="fixed">
+    <origin xyz="1.24344979e-16 -2.13162821e-16 0.105" rpy="0 0 0" />
+    <parent link="Third_Level_Hinge_Wall_Lower_v1_1" />
+    <child link="Door_Assembly_v1_4" />
+  </joint>
+  <joint name="rigid_85" type="fixed">
+    <origin xyz="1.42108547e-16 -3.95239397e-16 0.1175" rpy="0 0 0" />
+    <parent link="Third_Level_Right_Wall_v1_1" />
+    <child link="Dome_Plate_Right_v1_1" />
+  </joint>
+  <joint name="rigid_67" type="fixed">
+    <origin xyz="-0.0198343452 -0.0198343452 0" rpy="0 0 0" />
+    <parent link="Potentiometer_v1_1" />
+    <child link="Pot_Gear_v1_1" />
+  </joint>
+  <joint name="left_elbow_flex" type="revolute">
+    <origin xyz="0.0125 -1.96733905e-15 0" rpy="0 0 0" />
+    <parent link="Feetech_Servo_Motor_v1_3" />
+    <child link="Forearm_v1_1" />
+    <axis xyz="-1.58861472e-13 -1 -1.58959659e-13" />
+    <limit upper="1.570796" lower="-1.570796" effort="1000000" velocity="1000000" />
+  </joint>
+  <joint name="right_elbow_flex" type="revolute">
+    <origin xyz="-2.4448759e-17 -0.0125 -1.11022302e-15" rpy="0 0 0" />
+    <parent link="Feetech_Servo_Motor_v1_9" />
+    <child link="Forearm_v1_2" />
+    <axis xyz="-1 1.22464683e-16 -1.38156828e-13" />
+    <limit upper="1.570796" lower="-1.570796" effort="1000000" velocity="1000000" />
+  </joint>
+  <joint name="rigid_83" type="fixed">
+    <origin xyz="6.39488462e-16 8.17124146e-16 0.2125" rpy="0 0 0" />
+    <parent link="Third_Level_Hinge_Wall_Upper_v1_1" />
+    <child link="Dome_Plate_Rear_v1_1" />
+  </joint>
+  <joint name="rigid_111" type="fixed">
+    <origin xyz="0.148975 0.000375 -1.11022302e-16" rpy="0 0 0" />
+    <parent link="Forearm_v1_1" />
+    <child link="Feetech_Servo_Motor_v1_4" />
+  </joint>
+  <joint name="rigid_112" type="fixed">
+    <origin xyz="0.114214561 -1.36777525e-15 0.0102252723" rpy="0 0 0" />
+    <parent link="Forearm_v1_1" />
+    <child link="Motor_4_support_v1_1" />
+  </joint>
+  <joint name="rigid_131" type="fixed">
+    <origin xyz="-0.000375 -0.148975 3.33066907e-16" rpy="0 0 0" />
+    <parent link="Forearm_v1_2" />
+    <child link="Feetech_Servo_Motor_v1_10" />
+  </joint>
+  <joint name="rigid_132" type="fixed">
+    <origin xyz="1.40783652e-15 -0.114214561 -0.0102252723" rpy="0 0 0" />
+    <parent link="Forearm_v1_2" />
+    <child link="Motor_4_support_v1_2" />
+  </joint>
+  <joint name="left_wrist_flex" type="revolute">
+    <origin xyz="0.0125 -4.44522891e-18 2.22044605e-16" rpy="0 0 0" />
+    <parent link="Feetech_Servo_Motor_v1_4" />
+    <child link="Wrist_v1_1" />
+    <axis xyz="2.77555756e-16 1 1.59003484e-13" />
+    <limit upper="1.570796" lower="-1.570796" effort="1000000" velocity="1000000" />
+  </joint>
+  <joint name="right_wrist_flex" type="revolute">
+    <origin xyz="6.69494842e-18 -0.0125 -2.22044605e-16" rpy="0 0 0" />
+    <parent link="Feetech_Servo_Motor_v1_10" />
+    <child link="Wrist_v1_2" />
+    <axis xyz="-1 1.22464683e-16 -1.37718285e-13" />
+    <limit upper="1.570796" lower="-1.570796" effort="1000000" velocity="1000000" />
+  </joint>
+  <joint name="rigid_115" type="fixed">
+    <origin xyz="0.05745 -0.0370023843 -6.21724894e-15" rpy="0 0 0" />
+    <parent link="Wrist_v1_1" />
+    <child link="Motor_5_support_v1_1" />
+  </joint>
+  <joint name="rigid_135" type="fixed">
+    <origin xyz="0.0370023843 -0.05745 8.8817842e-16" rpy="0 0 0" />
+    <parent link="Wrist_v1_2" />
+    <child link="Motor_5_support_v1_2" />
+  </joint>
+  <joint name="left_wrist_roll" type="revolute">
+    <origin xyz="0.01775 0.0125 2.55351296e-15" rpy="0 0 0" />
+    <parent link="Feetech_Servo_Motor_v1_5" />
+    <child link="Gripper_Base_v1_1" />
+    <axis xyz="1 1.38777878e-16 4.24660307e-15" />
+    <limit upper="3.141593" lower="-3.141593" effort="1000000" velocity="1000000" />
+  </joint>
+  <joint name="rigid_117" type="fixed">
+    <origin xyz="0.030375 0.000375 0.0025" rpy="0 0 0" />
+    <parent link="Gripper_Base_v1_1" />
+    <child link="Feetech_Servo_Motor_v1_6" />
+  </joint>
+  <joint name="rigid_118" type="fixed">
+    <origin xyz="0.049 -0.0215000001 0.0264" rpy="0 0 0" />
+    <parent link="Gripper_Base_v1_1" />
+    <child link="Motor_6_cap_v1_1" />
+  </joint>
+  <joint name="left_gripper" type="revolute">
+    <origin xyz="-5.55111512e-16 -1.93833664e-15 0.0125" rpy="0 0 0" />
+    <parent link="Feetech_Servo_Motor_v1_6" />
+    <child link="Gripper_Finger_v1_1" />
+    <axis xyz="-2.41420347e-32 -1 -1.5974302e-13" />
+    <limit upper="1.047197551" lower="-0.087266463" effort="1000000" velocity="1000000" />
+  </joint>
+  <joint name="right_wrist_roll" type="revolute">
+    <origin xyz="-0.0125 -0.01775 -1.77635684e-15" rpy="0 0 0" />
+    <parent link="Feetech_Servo_Motor_v1_11" />
+    <child link="Gripper_Base_v1_2" />
+    <axis xyz="-2.78943535e-14 -1 2.51643989e-17" />
+    <limit upper="3.141593" lower="-3.141593" effort="1000000" velocity="1000000" />
+  </joint>
+  <joint name="rigid_137" type="fixed">
+    <origin xyz="0.000375 -0.030375 0.0025" rpy="0 0 0" />
+    <parent link="Gripper_Base_v1_2" />
+    <child link="Feetech_Servo_Motor_v1_12" />
+  </joint>
+  <joint name="rigid_138" type="fixed">
+    <origin xyz="-0.0824999999 -0.049 0.0264" rpy="0 0 0" />
+    <parent link="Gripper_Base_v1_2" />
+    <child link="Motor_6_cap_v1_2" />
+  </joint>
+  <joint name="right_gripper" type="revolute">
+    <origin xyz="-1.72539934e-15 2.22044605e-16 0.0125" rpy="0 0 0" />
+    <parent link="Feetech_Servo_Motor_v1_12" />
+    <child link="Gripper_Finger_v1_2" />
+    <axis xyz="-1 -3.28078984e-30 -1.3850687e-13" />
+    <limit upper="1.047197551" lower="-0.087266463" effort="1000000" velocity="1000000" />
+  </joint>
+  <joint name="rigid_91" type="fixed">
+    <origin xyz="-3.21964677e-17 3.55271368e-17 0" rpy="0 0 0" />
+    <parent link="Dome_Right_v1_1" />
+    <child link="Dome_Top_v1_1" />
+  </joint>
+  <joint name="fixed_Feetech_Servo_Motor_v1_5" type="fixed">
+    <origin xyz="0.0525 -0.0112 -1.99840144e-15" rpy="0 0 0" />
+    <parent link="Wrist_v1_1" />
+    <child link="Feetech_Servo_Motor_v1_5" />
+  </joint>
+  <joint name="fixed_Feetech_Servo_Motor_v1_11" type="fixed">
+    <origin xyz="0.0112 -0.0525 1.55431223e-15" rpy="0 0 0" />
+    <parent link="Wrist_v1_2" />
+    <child link="Feetech_Servo_Motor_v1_11" />
+  </joint>
+  <joint name="fixed_Circle_Accessory_Base_v1_1" type="fixed">
+    <origin xyz="-8.8817842e-17 7.10542736e-17 0.3325" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Circle_Accessory_Base_v1_1" />
+  </joint>
+  <joint name="fixed_Circle_Accessory_Base_v1_2" type="fixed">
+    <origin xyz="1.0658141e-15 2.57571742e-16 0.3325" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Circle_Accessory_Base_v1_2" />
+  </joint>
+  <joint name="fixed_Circle_Accessory_Base_v1_3" type="fixed">
+    <origin xyz="-7.10542736e-17 -2.84217094e-16 0.5575" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Circle_Accessory_Base_v1_3" />
+  </joint>
+  <joint name="fixed_Handle_v1_1" type="fixed">
+    <origin xyz="-7.10542736e-17 -2.84217094e-16 0.5575" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Handle_v1_1" />
+  </joint>
+  <joint name="fixed_Circle_Accessory_Base_v1_4" type="fixed">
+    <origin xyz="1.33226763e-15 -3.55271368e-16 0.5575" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Circle_Accessory_Base_v1_4" />
+  </joint>
+  <joint name="fixed_Handle_v1_2" type="fixed">
+    <origin xyz="1.33226763e-15 -3.55271368e-16 0.5575" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Handle_v1_2" />
+  </joint>
+  <joint name="fixed_Dome_Front_v1_1" type="fixed">
+    <origin xyz="1.0658141e-16 -7.10542736e-17 0.705" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Dome_Front_v1_1" />
+  </joint>
+  <joint name="fixed_Dome_Left_v1_1" type="fixed">
+    <origin xyz="-2.84217094e-16 -2.48689958e-16 0.705" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Dome_Left_v1_1" />
+  </joint>
+  <joint name="fixed_Dome_Right_v1_1" type="fixed">
+    <origin xyz="1.27897692e-15 -6.03961325e-16 0.705" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Dome_Right_v1_1" />
+  </joint>
+  <joint name="fixed_Dome_Back_v1_1" type="fixed">
+    <origin xyz="4.63016292e-13 -8.52651283e-16 0.705" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Dome_Back_v1_1" />
+  </joint>
+  <joint name="fixed_Eye_Platform_v1_1" type="fixed">
+    <origin xyz="0.141421356 -0.141421356 0.8175" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Eye_Platform_v1_1" />
+  </joint>
+  <joint name="fixed_LCD_Pocket_v1_1" type="fixed">
+    <origin xyz="-0.136979128 0.136979128 0.829090438" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="LCD_Pocket_v1_1" />
+  </joint>
+</robot>

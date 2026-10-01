@@ -1,0 +1,18 @@
+joint,type,parent,child,axis_xyz,lower,upper,effort,velocity
+linear_actuator,prismatic,base_link,Linear_Actuator_Assembly_v1_1,0 0 1,-0.315,0,1000,0.1
+rear_right_wheel,continuous,Wheel_Motor_v1_3,Wheel_Coupler_v1_3,-0.707106781 -0.707106781 -9.46704359e-15,,,,
+rear_left_wheel,continuous,Wheel_Motor_v1_2,Wheel_Coupler_v1_1,0.707106781 0.707106781 1.44238493e-14,,,,
+front_left_wheel,continuous,Wheel_Motor_v1_1,Wheel_Coupler_v1_2,0.707106781 0.707106781 -9.46704359e-15,,,,
+front_right_wheel,continuous,Wheel_Motor_v1_4,Wheel_Coupler_v1_4,-0.707106781 -0.707106781 1.44238493e-14,,,,
+left_shoulder_pan,revolute,Feetech_Servo_Motor_v1_1,Shoulder_v1_1,2.43339012e-17 -1.16743491e-16 1,-1.570796,1.570796,1000000,1000000
+right_shoulder_pan,revolute,Feetech_Servo_Motor_v1_7,Shoulder_v1_2,2.03431892e-16 2.77555756e-17 -1,-1.570796,1.570796,1000000,1000000
+left_shoulder_lift,revolute,Shoulder_v1_1,Bicep_Left_v1_1,-1.58861472e-13 -1 -1.2249273e-16,-2.094395102,2.094395102,1000000,1000000
+right_shoulder_lift,revolute,Shoulder_v1_2,Bicep_Left_v1_2,1 -1.22464683e-16 1.38181133e-13,-2.094395102,1.919862177,1000000,1000000
+left_elbow_flex,revolute,Feetech_Servo_Motor_v1_3,Forearm_v1_1,-1.58861472e-13 -1 -1.58959659e-13,-1.570796,1.570796,1000000,1000000
+right_elbow_flex,revolute,Feetech_Servo_Motor_v1_9,Forearm_v1_2,-1 1.22464683e-16 -1.38156828e-13,-1.570796,1.570796,1000000,1000000
+left_wrist_flex,revolute,Feetech_Servo_Motor_v1_4,Wrist_v1_1,2.77555756e-16 1 1.59003484e-13,-1.570796,1.570796,1000000,1000000
+right_wrist_flex,revolute,Feetech_Servo_Motor_v1_10,Wrist_v1_2,-1 1.22464683e-16 -1.37718285e-13,-1.570796,1.570796,1000000,1000000
+left_wrist_roll,revolute,Feetech_Servo_Motor_v1_5,Gripper_Base_v1_1,1 1.38777878e-16 4.24660307e-15,-3.141593,3.141593,1000000,1000000
+left_gripper,revolute,Feetech_Servo_Motor_v1_6,Gripper_Finger_v1_1,-2.41420347e-32 -1 -1.5974302e-13,-0.087266463,1.047197551,1000000,1000000
+right_wrist_roll,revolute,Feetech_Servo_Motor_v1_11,Gripper_Base_v1_2,-2.78943535e-14 -1 2.51643989e-17,-3.141593,3.141593,1000000,1000000
+right_gripper,revolute,Feetech_Servo_Motor_v1_12,Gripper_Finger_v1_2,-1 -3.28078984e-30 -1.3850687e-13,-0.087266463,1.047197551,1000000,1000000
